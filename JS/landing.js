@@ -55,6 +55,7 @@ if(users == null){
 
     users.push(user)
     localStorage.setItem('usersSalvos', JSON.stringify(users))
+    alert('Cadastro realizado com sucesso!')
 
 }
 

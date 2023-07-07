@@ -17,6 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #1B1B1B;
+  -webkit-font-smoothing: antialiased;
 }
 
 .aside {
