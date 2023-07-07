@@ -1,0 +1,117 @@
+:root {
+  --roxoClaro: #bf00ff;
+  --roxoEscuro: #8A08BB;
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../font/Poppins-Light.ttf);
+}
+body {
+  font-family: 'Poppins-Light';
+  width: 100%;
+  margin: 0px;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background: #1B1B1B;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 250px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #DDA0DD, var(--roxoEscuro));
+  border-image-slice: 1;
+  border-radius: 6px;
+  -webkit-mask:
+  linear-gradient(#fff 0 0) padding-box, 
+  linear-gradient(#fff 0 0);
+  background: #000;
+  text-align: center;
+  gap: 36px;
+  max-height: 820px;
+}
+.aside a {
+  color: white;
+}
+
+.ftperfil {
+  /* display: inline-block; */
+  justify-self: center;
+  max-width: 180px;
+  margin: 36px 36px;
+  border: 3px solid #0000;
+  background:
+    linear-gradient(to top ,#DDA0DD, var(--roxoEscuro)) padding-box,
+    linear-gradient(to top, #DDA0DD,var(--roxoEscuro)) border-box;
+  border-radius: 50%;
+}
+.aside h2 {
+  color: #fff;
+  justify-self: center;
+  margin: 0px;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.aside p {
+  color: #fff;
+  max-width: 200px;
+  font-size: 1rem;
+  justify-self: center;
+  max-height: 60px;
+}
+.aside ul {
+  width: 100%;
+}
+.aside li {
+  display: flex;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 1rem 0rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: start;
+  margin: 0px;
+  gap: 0px;
+}
+
+.aside li img {
+  display: inline;
+  max-width: 30px;
+  max-height: 30px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.aside li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.rodape {
+  background: url(../img/pattern-background-aside.svg);
+  color: #fff;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(45deg, #DDA0DD, var(--roxoEscuro));
+  border-image-slice: 1;
+  border-radius: 6px;
+  display: flex;
+  justify-items: center;
+}
+
+.rodape p {
+  max-width: 100%;
+  justify-self: center;
+}

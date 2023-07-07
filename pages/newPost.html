@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <title>LiquID - Amigos de alguns drinks</title>
+      <link rel="stylesheet" href="../CSS/stylePost.css" />
+      <meta name="description" content="liquID" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="./img/png/favicon.ico" type="image/svg+xml" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+
+    <body>
+      <header>
+        <div class="header">
+          <a href="./index.html"
+            ><img
+              class="logo"
+              src="../img/png/roxo_claro_transparente.png"
+              alt="Logo"
+          /></a>
+
+          <nav aria-label="primária">
+            <ul class="headerMenu">
+              <li class="headerBotao">
+                <a class="conexoes" href="../pages/index.html"
+                  ><img src="../img/png/menuIcons/friends.png" />
+                  <p>Conexões</p></a
+                >
+              </li>
+              <li class="headerBotao">
+                <a class="receitas" href="../pages/receitas.html"
+                  ><img src="../img/png/menuIcons/recipes.png" />
+                  <p>Receitas</p></a
+                >
+              </li>
+              <li class="headerBotao">
+                <a class="bar" href="../pages/meuBar.html"
+                  ><img src="../img/png/menuIcons/barR.png" />
+                  <p>Meu Bar</p></a
+                >
+              </li>
+              <li class="headerBotao">
+                <a class="add" href="../pages/index.html"
+                  ><img src="../img/png/menuIcons/add.png" />
+                  <p>Adicionar</p></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <nav aria-label="secundária" class="aside">
+          <a href="../pages/perfil.html">
+            <img
+              src="../img/perfil/perfilrafa.jpg"
+              alt="fotoPerfil"
+              class="ftperfil"
+            />
+          </a>
+          <div>
+            <h2>Rafael Pacheco</h2>
+            <p>
+              Me chamo Rafael, sou de Floripa, e me divirto fazendo uns drinks.
+            </p>
+          </div>
+          <ul>
+            <a href="./index.html"
+              ><li>
+                <img src="../img/png/menuIcons/menuLateral/home.svg" /> Home
+              </li></a
+            >
+            <a href="./notificacoes.html"
+              ><li>
+                <img src="../img/png/menuIcons/menuLateral/notifications.svg" />
+                Notificações
+              </li></a
+            >
+            <a href="./explorar.html"
+              ><li>
+                <img src="../img/png/menuIcons/menuLateral/explore.svg" />
+                Explorar
+              </li></a
+            >
+            <a href="./mensagens.html"
+              ><li>
+                <img src="../img/png/menuIcons/menuLateral/chat.svg" />
+                Mensagens
+              </li></a
+            >
+            <a href="./newPost.html"
+              ><li>
+                <img src="../img/png/menuIcons/menuLateral/newpost.svg" /> Novo
+                post
+              </li></a
+            >
+          </ul>
+        </nav>
+        <section>
+          <article class="meuPost" aria-labelledby="label-introducao">
+            <div class="conteudoPost">
+              <h1>NOVA PUBLICAÇÃO</h1>
+
+              <div class="containerAlt" id="containerA">
+                <div>
+                  <label for="nomeDrink">TITULO DRINK:</label>
+                  <input type="text" name="nomeDrink" id="nomeDrink" />
+                </div>
+
+                <div id="origem" class="ingredienteDiv">
+                  <div>
+                    <label for="ingrediente">INGREDIENTE: </label>
+                    <input type="text" class="ingredienteInput" />
+                  </div>
+                </div>
+                <div id="newInputDiv"></div>
+                <div class="botoes">
+                  <button class="button-add" onclick="newIngrediente()">
+                    NOVO INGREDIENTE
+                  </button>
+                </div>
+                <h2>DESCRIÇÃO</h2>
+                <textarea
+                  id="textoDrink"
+                  class="textoDrink"
+                  name="receitaTexto"
+                  rows="10"
+                  cols="50"
+                ></textarea>
+                <h2>RECEITA</h2>
+                <textarea
+                  id="receitaTexto"
+                  class="receitaTexto"
+                  name="receitaTexto"
+                  rows="10"
+                  cols="50"
+                ></textarea>
+
+                <label for="foto" id="labelFoto" class="button-15"
+                  >ESCOLHER FOTO</label
+                >
+                <input type="file" name="foto" id="foto" class="foto" />
+
+                <a href="./perfil.html"
+                  ><button
+                    class="button-15"
+                    role="button"
+                    onclick="addIngredientes()"
+                  >
+                    PUBLICAR
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="rodape">
+        <p>
+          Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
+          historia e honramos todo suor gasto para extrair somente o melhor de
+          cada ingrediente.
+        </p>
+        <p>Liquid, sejam bem vindos.</p>
+      </footer>
+
+      <script src="../JS/editor.js"></script>
+    </body>
+  </html>
+</html>
