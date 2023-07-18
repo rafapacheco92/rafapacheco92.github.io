@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>LiquID - Amigos de alguns drinks</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <meta name="description" content="liquID" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/png/favicon.ico" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="divVazia"></div>
+      <div class="divLogo">
+        <a class="aLogo" href="../index.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
+            alt="Logo" /></a>
+      </div>
+      <nav class="navPrimaria" aria-label="primária">
+        <ul class="headerMenu">
+          <li class="headerBotao">
+            <a class="conexoes botaoConexoes"><img src="../img/png/menuIcons/friends.png" />
+              <p>Conexões</p>
+            </a>
+          </li>
+          <li class="headerBotao">
+            <a class="receitas" href="../pages/receitas.html"><img src="../img/png/menuIcons/recipes.png" />
+              <p>Receitas</p>
+            </a>
+          </li>
+          <li class="headerBotao">
+            <a class="bar" href="../pages/meuBar.html"><img src="../img/png/menuIcons/barR.png" />
+              <p>Meu Bar</p>
+            </a>
+          </li>
+          <li class="headerBotao">
+            <a class="add" href="../pages/newPost.html"><img src="../img/png/menuIcons/add.png" />
+              <p>Publicar</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <dialog class="conexoesPop">
+
+    <div class="conexoesConteudo">
+      <div class="topModal">
+        <div class="divH2">
+          <h2>Conexões</h2>
+        </div>
+        <div class="divBotaoX"><button>X</button></div>
+      </div>
+      <div class="bottomModal">
+        <div class="conexaoBorda">
+          <img src="../img/perfil/rodrigo.jfif" alt="">
+          <p>Rodrigo Ramos</p>
+        </div>
+        <div class="conexaoBorda">
+          <img src="../img/perfil/perfilrafa.jpg" alt="">
+          <p>Saulo
+          <p>
+        </div>
+        <div class="conexao">
+          <img src="../img/perfil/rodrigo.jfif" alt="">
+          <p>Yaovi</p>
+        </div>
+      </div>
+    </div>
+
+  </dialog>
+
+  <dialog class="notPop">
+
+    <div class="notConteudo">
+      <div class="topModal">
+        <div class="divH2">
+          <h2>Notificações</h2>
+        </div>
+        <div class="divBotaoX"><button>X</button></div>
+      </div>
+      <div class="bottomModal">
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Saulo adicionou uma nova receita!
+          <p>
+        </div>
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Rodrigo adicionou uma nova receita!
+          <p>
+        </div>
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Yaovi adicionou uma nova receita!
+          <p>
+        </div>
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
+        </div>
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Saulo aceitou sua solicitação de conexão.
+          <p>
+        </div>
+        <div class="not notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Yaovi aceitou sua solicitação de conexão.</p>
+        </div>
+      </div>
+    </div>
+
+  </dialog>
+
+
+  <main class="main" id="mainId">
+    <nav aria-label="secundária" class="aside asidePerfil">
+      <a href="../pages/perfil.html">
+        <img src="../img/perfil/rodrigo.jfif" alt="fotoPerfil" class="ftperfil" />
+      </a>
+      <div>
+        <h2>Rodrigo Ramos</h2>
+        <p>
+          Da trilha ao balcão, uma vida movida pela aventura e pelos sabores únicos.
+        </p>
+      </div>
+      <ul>
+        <a href="./index.html">
+          <li><img src="../img/png/menuIcons/menuLateral/home.svg"> Home</li>
+        </a>
+        <a class="botaoNot">
+          <li><img src="../img/png/menuIcons/menuLateral/notifications.svg"> Notificações</li>
+        </a>
+        <a href="./news.html">
+          <li><img src="../img/png/menuIcons/menuLateral/explore.svg"> Explorar</li>
+        </a>
+
+      </ul>
+    </nav>
+    <section id="posts">
+      <article class="conteudo" aria-labelledby="label-introducao">
+        <div class="introducao" id="introducao">
+          <h2 id="label-introducao">
+            COQUETEL ACHOCOLATADO COM AMENDOAS:
+          </h2>
+          <p id="texto-conteudo" class="textoConteudo">
+            Curiosidade sobre mim, eu amo chocolate. Eu adoro em todas as formas. Quando posso tê-lo em forma de
+            coquetel, fico muito feliz. Há até um boato (ou lenda) de que toda vez que vou à Vegas (algo que tento fazer
+            pelo menos uma vez por ano), gosto de começar todos os dias com um Chocolate Martini. E o que dizer do fim
+            da noite? E quando é hora de relaxar com algo da família do bourbon? Temos o Coquetel de Chocolate, Xarope
+            de Ácer e amendoas para isso!
+          </p>
+          <a class="botao">
+            <p>RECEITA</p>
+          </a>
+        </div>
+        <div class="imagemIntro">
+          <img src="../img/posts/chocolate.jpg" />
+        </div>
+      </article>
+
+      <article class="conteudo" aria-labelledby="label-introducao">
+        <div class="introducao">
+          <h2 id="label-introducao">
+            VALENTINE AMARGO: Para um dia dos namorados amargo.
+          </h2>
+          <p id="texto-conteudo" class="textoConteudo">
+            Dia dos Namorados, ah, que época mágica do ano. Tudo é
+            cor-de-rosa, fofo e cheio de sentimentos melosos e "bleh". Não é
+            realmente a minha praia. Claro, vou comemorar, mas é mais um
+            momento para ficar em casa, preparar uma boa refeição. Não precisa
+            sair, fazer um grande alarde ou mostrar pra todo mundo. Não há
+            necessidade de ganhar pontos na internet sendo extremamente
+            extravagante em gestos grandiosos (ainda mais se isso acontece uma
+            vez no ano). E se você não tem ninguém para passar essa data, aí
+            então esse drink é pra você.
+          </p>
+          <a class="botao">
+            <p>RECEITA</p>
+          </a>
+        </div>
+        <div class="imagemIntro">
+          <img src="../img/posts/horchata.jpg" />
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>
+      Não gostamos de canudinhos e mini guarda-chuvas em prol da causa
+      ambiental, respeitamos a historia e honramos todo suor gasto para
+      extrair somente o melhor de cada ingrediente. Liquid, sejam bem vindos.
+    </p>
+  </footer>
+  <script src="../JS/perfilSec.js"></script>
+</body>
+
+</html>

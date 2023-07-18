@@ -1,0 +1,116 @@
+/* Responsivo Perfil */
+
+@media(max-width: 1600px) {
+
+  .header {
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+  
+  .conteudo{
+    margin: 0px 20px 0px 20px;
+  }
+  }
+
+  @media(max-width: 1150px) {
+
+    .headerBotao p {
+      font-size: 1.0rem;
+    }
+
+    .headerBotao a {
+      width: 120px;
+      height: 44px;
+      font-size: 0.8rem;
+      padding: .2rem 1rem;
+      align-items: center;
+      justify-content: center;    
+    }
+
+  }
+  
+  
+  @media(max-width: 1000px) {
+    .headerMenu {
+      margin-top: 70px;
+    }
+    .headerBotao a {
+      width: 100px;
+    }
+  
+    h2 {
+    font-size: 1.2rem;
+    }
+  
+    p {
+    font-size: .08rem;
+    }
+  
+    .logo {
+    height: 100px;
+    content: url(../img/png/icon_transparent.png)
+    }
+  
+    .conteudo {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    }
+  
+    p {
+     font-size: 1rem;
+    }
+  
+    .introducao::before{
+      display: none;
+    }
+  
+    .introducao {
+      text-align: left;
+      justify-items: left;
+    }
+  
+    body {
+    gap: 30px;
+    margin-top: 20px
+    }
+  
+    .headerMenu {
+    gap: 10px;
+    }
+  
+    .headerMenu img {
+      max-width: 30px;
+      max-height: 28px;
+    }
+  }
+  
+  @media (max-width: 780px){
+  
+  .headerBotao .conexoes {
+    content: url(./img/png/menuIcons/friends.png);
+  }
+  .headerBotao .receitas {
+    content: url(./img/png/menuIcons/recipes.png);
+  }
+  .headerBotao .bar {
+    content: url(./img/png/menuIcons/barR.png);
+  }
+  .headerBotao .add {
+    content: url(./img/png/menuIcons/add.png);
+  }
+  .headerBotao a {
+    width: 40px;
+    height: 44px;
+    display: flex;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    padding: .2rem 1rem;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;    
+  }
+  .conteudo{
+    margin: 0px 10px 0px 10px;
+  }
+  
+  }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./CSS/landingPage.css" />
+  <!-- <link rel="stylesheet" href="./CSS/cadastro.css" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiquID - Amigos de bons drinks</title>
+</head>
+
+<body>
+  <div id="container">
+
+    <div class="top"></div>
+
+    <div class="middle">
+      <div class="borderLeft"></div>
+      <div class="meio">
+        <div class="contentLeft">
+          <img class="logoLanding" src="./img/logov2.gif" alt="">
+        </div>
+        <header class="contentRight">
+          <div class="tab">
+            <button id="tabPadrao" class="ativo tabButton" onclick="abreTab(event, 'cadastroTab')">CADASTRO</button>
+            <button class="tabButton login" onclick="abreTab(event, 'loginTab')">LOGIN</button>
+          </div>
+          <div id="cadastroTab" class="conteudo">
+            <h3>CADASTRE-SE</h3>
+            <form class="classForm" action="./cadastro.html">
+              <label for="nomeInp" class="labelCadastro">Nome Completo<label class="campoObrigatorio">*</label></label>
+              <input type="text" id="nomeInp" name="nomeInp" required />
+              <label for="celularInp" class="labelCadastro">Celular<label class="campoObrigatorio">*</label></label>
+              <input type="text" id="celularInp" name="celularInp" required />
+              <div id="celularIncorreto"></div>
+              <label for="senhaInp" class="labelCadastro">Senha<label class="campoObrigatorio">*</label></label>
+              <input type="password" id="senhaInp" name="senhaInp" required />
+              <label for="confirmaSenhaInp" class="labelCadastro">Confirme a Senha<label
+                  class="campoObrigatorio">*</label></label>
+              <input type="password" id="confirmaSenhaInp" name="confirmaSenhaInp" required />
+              <div id="senhaNaoConfere"></div>
+              <label for="emailInp" class="labelCadastro">Email<label class="campoObrigatorio">*</label></label>
+              <input type="email" id="emailInp" name="emailInp" required />
+              <label for="confirmaEmailInp" class="labelCadastro">Confirme seu Email<label
+                  class="campoObrigatorio">*</label></label>
+              <input type="email" id="confirmaEmailInp" name="confirmaEmailInp" required />
+              <div id="emailNaoConfere"></div>
+              <label for="interesse"></label>
+              <select name="interesse" id="interesseInp" required>
+                <option value="Profissional">Bartender Profissional</option>
+                <option value="4Fun">Bartender 4 Fun</option>
+                <option value="Aprendiz">Aprendiz</option>
+                <option value="Iniciante">Totalmente Iniciante</option>
+              </select>
+              <div class="checkbox">
+                <input type="checkbox" id="maiorIdade" name="maiorIdade" value="afirmo" required /><label
+                  for="maiorIdade" class="labelCheckbox">Declaro que sou maior de 18 anos.</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="concordoTermos" name="concordoTermos" value="afirmo" required /><label
+                  for="maiorIdade" class="labelCheckbox">Concordo com os
+                  <a href="">termos de responsabilidade.</a></label>
+              </div>
+              <button class="buttonCadastro" onclick="criaConta()">
+                CRIAR CONTA
+              </button>
+            </form>
+            </p>
+          </div>
+
+          <div id="loginTab" class="conteudo">
+            <h3>LOGIN</h3>
+            <form action="login">
+              <label for="emailInp" class="labelCadastro">Email<label class="campoObrigatorio">*</label></label>
+              <input type="email" id="emailLoginInp" name="emailLoginInp" required />
+              <label for="senhaInp" class="labelCadastro">Senha<label class="campoObrigatorio">*</label></label>
+              <input type="password" id="senhaLoginInp" name="senhaLoginInp" required />
+              <button class="buttonCadastro" onclick="LogarConta()">
+                ENTRAR
+              </button>
+            </form>
+          </div>
+        </header>
+      </div>
+      <div class="borderRight"></div>
+    </div>
+    <footer class="rodape">
+      <p>
+        Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
+        historia e honramos todo suor gasto para extrair somente o melhor de
+        cada ingrediente.
+      </p>
+      <p>Liquid, sejam bem vindos.</p>
+    </footer>
+
+
+
+  </div>
+  <script src="/JS/landing.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+@import url(./global.css);
+
+
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 40px;
+}
+
+/* CONTEUDO */
+
+.containerAlt {
+  display: grid;
+  place-items: center;
+  max-width: 1000px;
+}
+
+.conteudoBar {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: center;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #DDA0DD, var(--roxoEscuro));
+  border-image-slice: 1;
+  border-radius: 6px;
+}
+
+.conteudoBar h1 {
+  font-size: 3rem;
+}
+
+
+.containerAlt p {
+  margin-bottom: 2rem;
+}
+
+.containerAlt ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.containerAlt li {
+  margin-right: 20px;
+}
+
+.checkbox-wrapper-2 .ckbox {
+  appearance: none;
+  background-color: #dfe1e4;
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 30px;
+}
+
+.checkbox-wrapper-2 .ckbox::before {
+  bottom: -6px;
+  content: "";
+  left: -6px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.checkbox-wrapper-2 .ckbox,
+.checkbox-wrapper-2 .ckbox::after {
+  transition: all 100ms ease-out;
+}
+
+.checkbox-wrapper-2 .ckbox::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.checkbox-wrapper-2 input[type=checkbox] {
+  cursor: default;
+}
+
+.checkbox-wrapper-2 .ckbox:hover {
+  background-color: #c9cbcd;
+  transition-duration: 0s;
+}
+
+.checkbox-wrapper-2 .ckbox:checked {
+  background-color: var(--roxoClaro);
+}
+
+.checkbox-wrapper-2 .ckbox:checked::after {
+  background-color: #fff;
+  left: 13px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.checkbox-wrapper-2 .ckbox:checked:hover {
+  background-color: var(--roxoEscuro);
+}
+
+.checkbox-wrapper-2 {
+  display: flex;
+  gap: 1rem;
+}
+
+/* BOTÃO */
+
+.button-15 {
+  background-image: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  border: 1px solid #4800bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: "Poppins";
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-15:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.button-15:hover {
+  background-image: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  border-color: #4800bc;
+  text-decoration: none;
+}
+
+.button-15:active {
+  background-image: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  border-color: #4800bc;
+  outline: none;
+}
+
+.button-15:focus {
+  box-shadow: rgba(188, 131, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
+
+.tituloDrink {
+  margin-top: 1rem;
+}
+
+.cardReceita {
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(to left, #DDA0DD, var(--roxoEscuro));
+  border-image-slice: 1;
+  border-radius: 30px;
+  -webkit-mask:
+  linear-gradient(#fff 0 0) padding-box, 
+  linear-gradient(#fff 0 0);
+  display: grid;
+  justify-items: center;
+}
+
+.cardTexto {
+  margin-bottom: 2rem
+}
+
+.fotoBar {
+  margin-top: 2rem;
+}

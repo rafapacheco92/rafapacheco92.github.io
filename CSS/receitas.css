@@ -1,0 +1,240 @@
+body {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.divVazia {
+  width: 2%;
+}
+
+.divLogo {
+  width: 28%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 255px;
+  grid-column: 1;
+  justify-items: start;
+  margin-left: 1.5rem;
+}
+
+.aLogo {
+  max-width: 250px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0px;
+  width: auto;
+  margin: auto;
+  background: #000;
+  color: #fff;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #dda0dd, var(--roxoEscuro));
+  border-image-slice: 1;
+  border-radius: 6px;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+}
+
+.textoConteudo {
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.8);
+  line-height: 2.5;
+}
+
+.vertical::hover .textoConteudo {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.vertical {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.barbadosPunch {
+  background-image: url(../img/receitas/barbados.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.bloodyMary {
+  background-image: url(../img/receitas/bloodyMary.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.caipirinha {
+  background-image: url(../img/receitas/caipirinha.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.casino {
+  background-image: url(../img/receitas/casino.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.cucumberGin {
+  background-image: url(../img/receitas/cucumber.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.godFather {
+  background-image: url(../img/receitas/godFather.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.grasshopper {
+  background-image: url(../img/receitas/grasshopper.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.greenFizz {
+  background-image: url(../img/receitas/greenFizz.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.maiTai {
+  background-image: url(../img/receitas/maiTai.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.margarita {
+  background-image: url(../img/receitas/margarita.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.mojitoMorango {
+  background-image: url(../img/receitas/mojito.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.moscowMule {
+  background-image: url(../img/receitas/moscow.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.negroni {
+  background-image: url(../img/receitas/negroni.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.oldFashioned {
+  background-image: url(../img/receitas/oldFashioned.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.orangeNegroni {
+  background-image: url(../img/receitas/orangeNegroni.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.quarterMiller {
+  background-image: url(../img/receitas/quarterMiller.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.ramosGin {
+  background-image: url(../img/receitas/ramosGin.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.southside {
+  background-image: url(../img/receitas/southside.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.tequilaCollins {
+  background-image: url(../img/receitas/tequilaCollins.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+.whiskySour {
+  background-image: url(../img/receitas/whiskySour.jpg);
+  width: 212px;
+  height: 376px;
+}
+
+/* Páginas Individuais */
+
+.conteudoReceita {
+  display: grid;
+  margin: auto;
+  background: #000;
+  color: #fff;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #dda0dd, var(--roxoEscuro));
+  border-image-slice: 1;
+  border-radius: 6px;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  text-align: center;
+  place-items: center;
+}
+
+.conteudoReceita h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.conteudoReceita p {
+  max-width: 950px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.conteudoReceita h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.conteudoReceita ul {
+  margin-top: 1rem;
+}
+
+.conteudoReceita li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.conteudoReceita img {
+  margin-bottom: 1rem;
+}
+
+.imgBottom {
+  margin-top: 2rem;
+}

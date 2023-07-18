@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>LiquID - Amigos de alguns drinks</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/receitas.css" />
+  <meta name="description" content="liquID" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/png/favicon.ico" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="divVazia"></div>
+      <div class="divLogo">
+        <a class="aLogo" href="../index.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
+            alt="Logo" /></a>
+      </div>
+      <nav class="navPrimaria" aria-label="primária">
+        <ul class="headerMenu">
+          <li class="headerBotao">
+            <a class="conexoes botaoConexoes"><img src="../img/png/menuIcons/friends.png" />
+              <p>Conexões</p>
+            </a>
+          </li>
+          <li class="headerBotao">
+            <a class="receitas" href="../pages/receitas.html"><img src="../img/png/menuIcons/recipes.png" />
+              <p>Receitas</p>
+            </a>
+          </li>
+          <li class="headerBotao">
+            <a class="bar" href="../pages/meuBar.html"><img src="../img/png/menuIcons/barR.png" />
+              <p>Meu Bar</p>
+            </a>
+          </li>
+          <li class="headerBotao">
+            <a class="add" href="../pages/newPost.html"><img src="../img/png/menuIcons/add.png" />
+              <p>Publicar</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <dialog class="conexoesPop">
+
+    <div class="conexoesConteudo">
+      <div class="topModal">
+        <div class="divH2">
+          <h2>Conexões</h2>
+        </div>
+        <div class="divBotaoX"><button>X</button></div>
+      </div>
+      <div class="bottomModal">
+        <div class="conexaoBorda">
+          <img src="../img/perfil/rodrigo.jfif" alt="">
+          <p>Rodrigo Ramos</p>
+        </div>
+        <div class="conexaoBorda">
+          <img src="../img/perfil/perfilrafa.jpg" alt="">
+          <p>Saulo
+          <p>
+        </div>
+        <div class="conexao">
+          <img src="../img/perfil/rodrigo.jfif" alt="">
+          <p>Yaovi</p>
+        </div>
+      </div>
+    </div>
+
+  </dialog>
+
+  <dialog class="notPop">
+
+    <div class="notConteudo">
+      <div class="topModal">
+        <div class="divH2">
+          <h2>Notificações</h2>
+        </div>
+        <div class="divBotaoX"><button>X</button></div>
+      </div>
+      <div class="bottomModal">
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Saulo adicionou uma nova receita!
+          <p>
+        </div>
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Rodrigo adicionou uma nova receita!
+          <p>
+        </div>
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Yaovi adicionou uma nova receita!
+          <p>
+        </div>
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
+        </div>
+        <div class="notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Saulo aceitou sua solicitação de conexão.
+          <p>
+        </div>
+        <div class="not notBorda">
+          <button class="btNotficiation" onclick="Apaga()"><img class="check"
+              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+          <p>Yaovi aceitou sua solicitação de conexão.</p>
+        </div>
+      </div>
+    </div>
+
+  </dialog>
+
+
+  <main class="main" id="mainId">
+    <nav aria-label="secundária" class="aside asidePerfil">
+      <a href="../pages/perfil.html">
+        <img src="../img/perfil/perfilrafa.jpg" alt="fotoPerfil" class="ftperfil" />
+      </a>
+      <div>
+        <h2>Rafael Pacheco</h2>
+        <p>
+          Me chamo Rafael, sou de Floripa, e me divirto fazendo uns drinks.
+        </p>
+      </div>
+      <ul>
+        <a href="./index.html">
+          <li><img src="../img/png/menuIcons/menuLateral/home.svg"> Home</li>
+        </a>
+        <a class="botaoNot">
+          <li><img src="../img/png/menuIcons/menuLateral/notifications.svg"> Notificações</li>
+        </a>
+        <a href="./news.html">
+          <li><img src="../img/png/menuIcons/menuLateral/explore.svg"> Explorar</li>
+        </a>
+
+      </ul>
+    </nav>
+    <section>
+      <article class="conteudo" aria-labelledby="label-introducao">
+        <a href="./receitas/barbadosPunch.html">
+          <div class="barbadosPunch vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">BARBADOS PUNCH</p>
+          </div>
+        </a>
+        <a href="./receitas/bloodyMary.html">
+          <div class="bloodyMary vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">BLOODY MARY</p>
+          </div>
+        </a>
+        <a href="./receitas/caipirinha.html">
+          <div class="caipirinha vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">CAIPIRINHA</p>
+          </div>
+        </a>
+        <a href="./receitas/casino.html">
+          <div class="casino vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">CASINO</p>
+          </div>
+        </a>
+        <a href="./receitas/cucumberGin.html">
+          <div class="cucumberGin vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">CUCUMBER GIN</p>
+          </div>
+        </a>
+        <a href="./receitas/godfather.html">
+          <div class="godFather vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">GODFATHER</p>
+          </div>
+        </a>
+        <a href="./receitas/grasshopper.html">
+          <div class="grasshopper vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">GRASSHOPPER</p>
+          </div>
+        </a>
+        <a href="./receitas/greenFizz.html">
+          <div class="greenFizz vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">GREEN FIZZ</p>
+          </div>
+        </a>
+        <a href="./receitas/maiTai.html">
+          <div class="maiTai vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">MAI TAI</p>
+          </div>
+        </a>
+        <a href="./receitas/margarita.html">
+          <div class="margarita vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">MARGARITA</p>
+          </div>
+        </a>
+        <a href="./receitas/mojitoMorango.html">
+          <div class="mojitoMorango vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">MOJITO DE MORANGO</p>
+          </div>
+        </a>
+        <a href="./receitas/moscowMule.html">
+          <div class="moscowMule vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">MOSCOW MULE</p>
+          </div>
+        </a>
+        <a href="./receitas/negroni.html">
+          <div class="negroni vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">NEGRONI</p>
+          </div>
+        </a>
+        <a href="./receitas/oldFashioned.html">
+          <div class="oldFashioned vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">OLD FASHIONED</p>
+          </div>
+        </a>
+        <a href="./receitas/orangeNegroni.html">
+          <div class="orangeNegroni vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">ORANGE NEGRONI</p>
+          </div>
+        </a>
+        <a href="./receitas/quarterMiller.html">
+          <div class="quarterMiller vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">QUARTER MILLER</p>
+          </div>
+        </a>
+        <a href="./receitas/ramosGin.html">
+          <div class="ramosGin vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">RAMOS GIN</p>
+          </div>
+        </a>
+        <a href="./receitas/southside.html">
+          <div class="southside vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">SOUTHSIDE</p>
+          </div>
+        </a>
+        <a href="./receitas/tequilaCollins.html">
+          <div class="tequilaCollins vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">TEQUILA COLLINS</p>
+          </div>
+        </a>
+        <a href="./receitas/whiskySour.html">
+          <div class="whiskySour vertical" id="receita">
+            <p id="texto-conteudo" class="textoConteudo">WHISKY SOUR</p>
+          </div>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>
+      Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
+      historia e honramos todo suor gasto para extrair somente o melhor de
+      cada ingrediente.
+    </p>
+    <p>Liquid, sejam bem vindos.</p>
+  </footer>
+  <script src="../JS/postPerfil.js"></script>
+
+</body>
+
+</html>

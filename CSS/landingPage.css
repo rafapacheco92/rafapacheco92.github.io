@@ -1,0 +1,262 @@
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../font/Poppins-Light.ttf);
+}
+
+:root {
+  --roxoClaro: #bf00ff;
+  --roxoEscuro: #8A08BB;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: 'Poppins-Light';
+}
+
+#container {
+  background-color: black;
+  height: 100%;
+}
+
+.top {
+  background: url(../img/pattern-background-aside.svg);
+  height: 0%;
+}
+
+.middle {
+  height: 90%;
+  width: 100%;
+  display: flex;
+}
+
+.borderLeft {
+  background: url(../img/pattern-background-aside.svg);
+  height: 100%;
+  width: 15%;
+}
+
+.meio {
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  height: 100%;
+  width: 70%;
+  border-radius: 6px;
+}
+
+.borderRight {
+  background: url(../img/pattern-background-aside.svg);
+  height: 100%;
+  width: 15%;
+}
+
+.contentLeft {
+  height: 100%;
+  width: 70%;  
+  display: flex;
+  align-items: center;
+  justify-items: start;
+}
+
+.contentRight {
+  height: 100%;
+  width: 30%;
+}
+
+
+.rodape {
+  height: 10%;
+  background: url(../img/pattern-background-aside.svg);
+  color: #fff;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(45deg, #DDA0DD, var(--roxoEscuro));
+  border-image-slice: 1;
+  display: flex;
+  justify-items: center;
+  text-align: center;
+  text-justify: center;
+  gap: 5px;
+}
+
+.tab {
+  border-bottom: none;
+  border-radius: 0px 4px 0 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tab button {
+  cursor: pointer;
+  font-weight: bold;
+  color: #0b090a;
+  margin: 3px 0px 0 2px;
+  float: left;
+  background-image: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  border: 1px solid #4800bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-size: 17px;
+  letter-spacing: -.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.tab button:hover {
+  background-color: #fbfbfb;
+}
+
+
+.conteudo {
+  padding: 6px 12px;
+  display: none;
+  height: 93%;
+}
+
+.conteudo h3 {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.conteudo .labelCadastro {
+  display: block;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.conteudo input {
+  font-size: 1.2rem;
+  padding: 5px;
+  border: #bf00ff solid 1px;
+  border-radius: 4px;
+  display: block;
+  height: 14px;
+  margin-bottom: 12px
+}
+
+.conteudo .buttonCadastro {
+  background-image: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  border: 1px solid #4800bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.conteudo .buttonCadastro:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.conteudo .buttonCadastro:hover {
+  background-image: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  border-color: #4800bc;
+  text-decoration: none;
+}
+
+.conteudo .buttonCadastro:active {
+  background-image: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  border-color: #4800bc;
+  outline: none;
+}
+
+.conteudo .buttonCadastro:focus {
+  box-shadow: rgba(188, 131, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
+
+.conteudo .campoObrigatorio {
+  color: #ff0000;
+}
+
+.conteudo .checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.conteudo #interesseInp {
+  height: 35px;
+  font-size: 1rem;
+  font-family: "Poppins-Light";
+}
+
+.labelCheckbox {
+  font-size: 0.9rem;
+}
+
+.checkbox a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.checkbox label {
+  color: #fff;
+  margin: 0px;
+}
+
+.checkbox input {
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+select {
+  font-size: 1.2rem;
+  padding: 5px 12px;
+  margin-bottom: 20px;
+  font-family: Poppins;
+  border: var(--roxoClaro) solid 3px;
+  border-radius: 6px;
+}
+
+.ativo {
+  background-color: white;
+  color: #bf00ff;
+}
+
+.logoLanding {
+  object-fit: cover;
+  max-width: 700px;
+}

@@ -1,0 +1,145 @@
+@import url(./global.css);
+
+.main {
+  display: grid;
+  /* width: 70vw; */
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+}
+
+.asidePerfil {
+  margin-left: 1rem;
+}
+
+/* CONTEUDO */
+
+.carrossel {
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: right;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #dda0dd, var(--roxoEscuro));
+  border-image-slice: 1;
+  border-radius: 6px;
+  max-width: 450px;
+  align-content: center;
+  justify-items: end;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.textoConteudo {
+  font-size: 1rem;
+}
+
+.introducao {
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #dda0dd, var(--roxoEscuro));
+  border-image-slice: 1;
+  border-radius: 6px;
+  max-width: 450px;
+}
+
+.introducaoCarrossel {
+  background: #000;
+  align-content: center;
+  justify-items: end;
+  position: absolute;
+  display: none;
+}
+
+.introducao h1,
+.introducaoCarrossel h1 {
+  font-size: 2rem;
+}
+
+.carrossel::before {
+  content: '';
+  width: 100px;
+  height: 5px;
+  background: var(--roxoEscuro);
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  border-radius: 4px;
+  z-index: 5;
+}
+.conteudo .botao {
+  background: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.botaoRetorna {
+  background: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.botao p {
+  margin-top: 5px;
+}
+
+.botaoRetorna p {
+  margin-top: 5px;
+}
+
+.conteudo .botao p:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: white;
+  margin-top: 1px;
+  transition: 0.3s;
+}
+
+.conteudo .botaoRetorna p:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: white;
+  margin-top: 1px;
+  transition: 0.3s;
+}
+
+.conteudo .botao p:hover:after {
+  width: 100%;
+}
+
+.conteudo .botaoRetorna p:hover:after {
+  width: 100%;
+}
+
+.imagemIntro img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
