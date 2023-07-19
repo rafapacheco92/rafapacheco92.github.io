@@ -32,7 +32,7 @@ btnDois.onclick = function () {
 }
 
 btnDoisFecha.onclick = function () {
-    newsOne.close()
+    newsTwo.close()
 }
 
 btnTres.onclick = function () {

@@ -17,9 +17,8 @@
 <body>
   <header>
     <div class="header">
-      <div class="divVazia"></div>
       <div class="divLogo">
-        <a class="aLogo" href="../index.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
+        <a class="aLogo" href="./perfil.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
             alt="Logo" /></a>
       </div>
       <nav class="navPrimaria" aria-label="primária">
@@ -51,7 +50,6 @@
 
 
   <dialog class="conexoesPop">
-
     <div class="conexoesConteudo">
       <div class="topModal">
         <div class="divH2">
@@ -61,25 +59,24 @@
       </div>
       <div class="bottomModal">
         <div class="conexaoBorda">
-          <img src="../img/perfil/rodrigo.jfif" alt="">
+          <img src="../img/perfil/rodrigo.jfif" alt="" />
           <p>Rodrigo Ramos</p>
         </div>
         <div class="conexaoBorda">
-          <img src="../img/perfil/perfilrafa.jpg" alt="">
-          <p>Saulo
-          <p>
+          <img src="../img/perfil/fotoPerfilSaulo.jpg" alt="" />
+          <p>Saulo Tavares</p>
+          <p></p>
         </div>
+
         <div class="conexao">
-          <img src="../img/perfil/rodrigo.jfif" alt="">
-          <p>Yaovi</p>
+          <img src="../img/perfil/ftyaovi.jpg" alt="" />
+          <p>Kangnivi Yaovi</p>
         </div>
       </div>
     </div>
-
   </dialog>
 
   <dialog class="notPop">
-
     <div class="notConteudo">
       <div class="topModal">
         <div class="divH2">
@@ -88,43 +85,52 @@
         <div class="divBotaoX"><button>X</button></div>
       </div>
       <div class="bottomModal">
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Saulo adicionou uma nova receita!
-          <p>
+        <div class="notBorda" id="divNotificacao00">
+          <button class="btNotficiation" onclick="Apaga(0)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
+          <p>Saulo adicionou uma nova receita!</p>
+          <p></p>
         </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Rodrigo adicionou uma nova receita!
-          <p>
+
+        <div class="notBorda" id="divNotificacao01">
+          <button class="btNotficiation" onclick="Apaga(1)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
+          <p>Rodrigo adicionou uma nova receita!</p>
+          <p></p>
         </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Yaovi adicionou uma nova receita!
-          <p>
+
+        <div class="notBorda" id="divNotificacao02">
+          <button class="btNotficiation" onclick="Apaga(2)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
+          <p>Yaovi adicionou uma nova receita!</p>
+          <p></p>
         </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+
+        <div class="notBorda" id="divNotificacao03">
+          <button class="btNotficiation" onclick="Apaga(3)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
           <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
         </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Saulo aceitou sua solicitação de conexão.
-          <p>
+        <div class="notBorda" id="divNotificacao04">
+          <button class="btNotficiation" onclick="Apaga(4)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
+          <p>Saulo aceitou sua solicitação de conexão.</p>
+          <p></p>
         </div>
-        <div class="not notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+
+        <div class="not notBorda" id="divNotificacao05">
+          <button class="btNotficiation" onclick="Apaga(5)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
           <p>Yaovi aceitou sua solicitação de conexão.</p>
         </div>
       </div>
     </div>
-
   </dialog>
 
 
@@ -266,7 +272,9 @@
     </p>
     <p>Liquid, sejam bem vindos.</p>
   </footer>
-  <script src="../JS/postPerfil.js"></script>
+  <script src="../JS/postPerfilDialog.js"></script>
+  <script src="../JS/editor.js"></script>
+
 
 </body>
 

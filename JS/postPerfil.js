@@ -13,6 +13,7 @@ let posts = [
     ],
     texto:
       'Aqui em casa a gente tem a tradição de celebramos tudo o que é ótimo sobre o exagero brasileiro em um único dia, geralmente assistindo um Masterchef. principalmente na final. A comida é boa. Este ano, decidi que precisávamos de um coquetel edição especial para acompanhar, apresentando o Superb!',
+    receita: 'Adicione todas as bebidas alcoólicas em seu copo de coquetel com gelo. Agite. Coloque um magnífico pedaço de gelo em seu copo. Despeje seu coquetel sobre ele. Decore com suas cerejas ao marasquino.'
   },
 
   {
@@ -30,7 +31,8 @@ let posts = [
       'Talo de aipo para decorar (opcional)',
     ],
     texto:
-      'Dia dos Namorados, ah, que época mágica do ano. Tudo é cor-de-rosa, fofo e cheio de sentimentos melosos e "bleh". Não é realmente a minha praia. Claro, vou comemorar, mas é mais um momento para ficar em casa, preparar uma boa refeição. Não precisa sair, fazer um grande alarde ou mostrar pra todo mundo. Não há necessidade de ganhar pontos na internet sendo extremamente extravagante em gestos grandiosos (ainda mais se isso acontece uma vez no ano). E se você não tem ninguém para passar essa data, aí então esse drink é pra você.',
+      'Dia dos Namorados, ah, que época mágica do ano. Tudo é cor-de-rosa, fofo e cheio de sentimentos melosos e "bleh". Claro, vou comemorar, mas é mais um momento para ficar em casa. Não precisa sair, fazer um grande alarde ou mostrar pra todo mundo.',
+    receita: 'Coloque todas as bebidas alcoólicas e o suco de limão em uma coqueteleira. Adicione gelo. Agite. Despeje e coe em seu copo. Adicione uma etapa de coagem para evitar pedaços de gelo. A menos que você prefira, nesse caso, não coe. Decore com um morango. Agora, fique amargo. Ou seja feliz. De qualquer maneira, é um coquetel excelente.'
   },
 ];
 
@@ -52,6 +54,7 @@ criaPost(newPosts);
 
 function criaPost(newPosts) {
   
+  console.log(newPosts)
 
   for (i = 0; i < newPosts.length; i++) {
     
@@ -80,25 +83,28 @@ function criaPost(newPosts) {
     descricao.appendChild(textoDescricaoDrink);
     divNewPost.appendChild(descricao);
 
-    // let listaIngredientesPost = document.createElement('ul');
+    let tituloIngredientes = document.createElement('h2');
+    tituloIngredientes.setAttribute('id', 'label-introducao');
+    let textoTituloIngredientes = document.createTextNode('Ingredientes');
+    tituloIngredientes.appendChild(textoTituloIngredientes);
+    divNewPost.appendChild(tituloIngredientes);
 
-    // for (i = 0; i < r.ingredientes.length; i++) {
-    //   let item = document.createElement('li');
-    //   let textoIngredientes = document.createTextNode(r.ingredientes[i]);
-    //   item.appendChild(textoIngredientes);
-    //   listaIngredientesPost.appendChild(item);
-    // }
-    // divNewPost.appendChild(listaIngredientesPost);
-    
-    
+    let listaIngredientesPost = document.createElement('ul');
 
-    let btnNewPost = document.createElement('a');
-    btnNewPost.setAttribute('class', 'botao');
-    let textoBtn = document.createElement('p');
-    let conteudoTextoBtn = document.createTextNode('RECEITA');
-    textoBtn.appendChild(conteudoTextoBtn);
-    btnNewPost.appendChild(textoBtn);
-    divNewPost.appendChild(btnNewPost);
+    for (j = 0; j < newPosts[i].ingredientes.length; j++) {
+      let item = document.createElement('li');
+      let textoIngredientes = document.createTextNode(newPosts[i].ingredientes[j]);
+      item.appendChild(textoIngredientes);
+      listaIngredientesPost.appendChild(item);
+    }
+    divNewPost.appendChild(listaIngredientesPost);
+
+    let receita = document.createElement('p');
+    receita.setAttribute('id', 'texto-conteudo');
+    receita.setAttribute('class', 'textoConteudo');
+    let textoReceitaDrink = document.createTextNode(newPosts[i].receita);
+    receita.appendChild(textoReceitaDrink);
+    divNewPost.appendChild(receita);
 
     let divNewPic = document.createElement('div');
     divNewPic.setAttribute('class', 'imagemIntro');

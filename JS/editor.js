@@ -34,7 +34,6 @@ function addIngredientes() {
   textoDescricao = document.getElementById('textoDrink').value;
   tituloReceita = document.getElementById('nomeDrink').value;
   foto = document.getElementById('foto').value;
-  console.log(foto, 'foto');
   for (i = 0; i < ingredientesDoInput.length; i++) {
     ingredientesPost.push(ingredientesDoInput[i].value);
   }
@@ -56,8 +55,5 @@ function addIngredientes() {
 
   localStorage.setItem('post', postTeste);
 
-  //   for (i = 0; i < posts.length; i++) {
-  //     criaPost(posts[i]);
-  //   }
   window.location.href = './perfil.html';
 }

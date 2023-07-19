@@ -48,14 +48,12 @@ p {
 
 .header {
   display: flex;
-  width: 70vw;
+  width: 95vw;
   justify-content: space-between;
   margin-top: 3rem;
+  margin-right: 3rem;
 }
 
-.divVazia {
-  width: 2%;
-}
 
 .divLogo {
   /* width: 28%; */
@@ -75,7 +73,7 @@ p {
 }
 
 .aLogo {
-  max-width: 250px;
+  max-width: 230px;
 }
 
 .headerMenu {
@@ -86,6 +84,10 @@ p {
 
 .headerBotao {
   cursor: pointer;
+}
+
+.headerBotao p {
+  min-width: 90px;
 }
 
 .headerBotao a {

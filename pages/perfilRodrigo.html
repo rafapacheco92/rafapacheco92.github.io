@@ -16,9 +16,8 @@
 <body>
   <header>
     <div class="header">
-      <div class="divVazia"></div>
       <div class="divLogo">
-        <a class="aLogo" href="../index.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
+        <a class="aLogo" href="./perfil.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
             alt="Logo" /></a>
       </div>
       <nav class="navPrimaria" aria-label="primária">
@@ -60,17 +59,16 @@
       </div>
       <div class="bottomModal">
         <div class="conexaoBorda">
-          <img src="../img/perfil/rodrigo.jfif" alt="">
-          <p>Rodrigo Ramos</p>
+          <img src="../img/perfil/perfilrafa.jpg" alt="">
+          <p>Rafael Pacheco</p>
         </div>
         <div class="conexaoBorda">
-          <img src="../img/perfil/perfilrafa.jpg" alt="">
-          <p>Saulo
-          <p>
+          <img src="../img/perfil/fotoPerfilSaulo.jpg" alt="">
+          <p>Saulo Tavares</p>
         </div>
         <div class="conexao">
-          <img src="../img/perfil/rodrigo.jfif" alt="">
-          <p>Yaovi</p>
+          <img src="../img/perfil/ftyaovi.jpg" alt="">
+          <p>Kangnivi Yaovi</p>
         </div>
       </div>
     </div>
@@ -78,7 +76,6 @@
   </dialog>
 
   <dialog class="notPop">
-
     <div class="notConteudo">
       <div class="topModal">
         <div class="divH2">
@@ -87,43 +84,52 @@
         <div class="divBotaoX"><button>X</button></div>
       </div>
       <div class="bottomModal">
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Saulo adicionou uma nova receita!
-          <p>
+        <div class="notBorda" id="divNotificacao00">
+          <button class="btNotficiation" onclick="Apaga(0)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
+          <p>Saulo adicionou uma nova receita!</p>
+          <p></p>
         </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Rodrigo adicionou uma nova receita!
-          <p>
+
+        <div class="notBorda" id="divNotificacao01">
+          <button class="btNotficiation" onclick="Apaga(1)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
+          <p>Rodrigo adicionou uma nova receita!</p>
+          <p></p>
         </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Yaovi adicionou uma nova receita!
-          <p>
+
+        <div class="notBorda" id="divNotificacao02">
+          <button class="btNotficiation" onclick="Apaga(2)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
+          <p>Yaovi adicionou uma nova receita!</p>
+          <p></p>
         </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+
+        <div class="notBorda" id="divNotificacao03">
+          <button class="btNotficiation" onclick="Apaga(3)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
           <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
         </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Saulo aceitou sua solicitação de conexão.
-          <p>
+        <div class="notBorda" id="divNotificacao04">
+          <button class="btNotficiation" onclick="Apaga(4)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
+          <p>Saulo aceitou sua solicitação de conexão.</p>
+          <p></p>
         </div>
-        <div class="not notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
+
+        <div class="not notBorda" id="divNotificacao05">
+          <button class="btNotficiation" onclick="Apaga(5)">
+            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
+          </button>
           <p>Yaovi aceitou sua solicitação de conexão.</p>
         </div>
       </div>
     </div>
-
   </dialog>
 
 
@@ -155,7 +161,7 @@
       <article class="conteudo" aria-labelledby="label-introducao">
         <div class="introducao" id="introducao">
           <h2 id="label-introducao">
-            COQUETEL ACHOCOLATADO COM AMENDOAS:
+            COQUETEL ACHOCOLATADO COM AMENDOAS
           </h2>
           <p id="texto-conteudo" class="textoConteudo">
             Curiosidade sobre mim, eu amo chocolate. Eu adoro em todas as formas. Quando posso tê-lo em forma de
@@ -164,9 +170,19 @@
             da noite? E quando é hora de relaxar com algo da família do bourbon? Temos o Coquetel de Chocolate, Xarope
             de Ácer e amendoas para isso!
           </p>
-          <a class="botao">
-            <p>RECEITA</p>
-          </a>
+          <h2 id="label-introducao">
+            Ingredientes
+          </h2>
+          <ul>
+            <li>60 ml de bourbon infusionado com pecan</li>
+            <li>10 ml de xarope de maple</li>
+            <li>22 ml de crème de cacao amargo</li>
+            <li>Bitters de chocolate</li>
+          </ul>
+          <p id="texto-conteudo" class="textoConteudo">
+            Faça seu bourbon infusionado com pecan. Adicione o bourbon, o xarope, o crème de cacao amargo e os bitters em um shaker com gelo. Agite. Despeje o conteúdo do shaker em um copo old fashioned com um grande pedaço de gelo. Decore com uma fatia de pecan. Despeje uma parte da stout suavemente por cima.
+          </p>
+        </div>
         </div>
         <div class="imagemIntro">
           <img src="../img/posts/chocolate.jpg" />
@@ -176,22 +192,24 @@
       <article class="conteudo" aria-labelledby="label-introducao">
         <div class="introducao">
           <h2 id="label-introducao">
-            VALENTINE AMARGO: Para um dia dos namorados amargo.
+            HORCHATA
           </h2>
           <p id="texto-conteudo" class="textoConteudo">
-            Dia dos Namorados, ah, que época mágica do ano. Tudo é
-            cor-de-rosa, fofo e cheio de sentimentos melosos e "bleh". Não é
-            realmente a minha praia. Claro, vou comemorar, mas é mais um
-            momento para ficar em casa, preparar uma boa refeição. Não precisa
-            sair, fazer um grande alarde ou mostrar pra todo mundo. Não há
-            necessidade de ganhar pontos na internet sendo extremamente
-            extravagante em gestos grandiosos (ainda mais se isso acontece uma
-            vez no ano). E se você não tem ninguém para passar essa data, aí
-            então esse drink é pra você.
+            Se você não conhece horchata, é um elixir mágico de sabor - pense nela como um pudim de arroz, mas em forma de bebida e mais leve. É refrescante. Sabendo disso, era apenas uma questão de tempo para eu enfrentar essa bebida mais incrível em forma de álcool, vamos começar com o Horchata!
           </p>
-          <a class="botao">
-            <p>RECEITA</p>
-          </a>
+          <h2 id="label-introducao">
+            Ingredientes
+          </h2>
+          <ul>
+            <li>120 ml de leite de amêndoas</li>
+            <li>15 ml de licor de amêndoas</li>
+            <li>15 ml de xarope simples de canela</li>
+            <li>60 ml de tequila añejo</li>
+          </ul>
+          <p id="texto-conteudo" class="textoConteudo">
+            Adicione todos os ingredientes em um shaker com gelo. Adivinha? Agite. Encha o copo com gelo. Coe sua horchata azedada no copo. Decore com um pouco de canela.
+          </p>
+        </div>
         </div>
         <div class="imagemIntro">
           <img src="../img/posts/horchata.jpg" />
@@ -207,7 +225,7 @@
       extrair somente o melhor de cada ingrediente. Liquid, sejam bem vindos.
     </p>
   </footer>
-  <script src="../JS/perfilSec.js"></script>
+  <script src="../JS/postPerfilDialog.js"></script>
 </body>
 
 </html>

@@ -1,36 +1,59 @@
+let userLogado = false
+
 function usersLocalStorage() {
-  //   vetorUsers = JSON.stringify(localStorage.getItem('usersLoc'));
-  
-  //   if (vetorUsers === 'null') {
-      
-  //     let usersJ = JSON.stringify(users);
-  //     localStorage.setItem('post', usersJ);
-  //   }
-  
-      user = {
-      nome:  (document.getElementById('nomeInp').value).toUpperCase(),
-      senha: (document.getElementById('senhaInp').value),
-      email: (document.getElementById('emailInp').value).toLowerCase(),
+  const user = {
+    nome: document.getElementById('nomeInp').value.toUpperCase(),
+    senha: document.getElementById('senhaInp').value,
+    email: document.getElementById('emailInp').value.toLowerCase(),
+  };
+
+  let users = [];
+  let vetorUsers = JSON.parse(localStorage.getItem('usersDb')) || []; // Definir vetorUsers como um array vazio, se for null ou undefined
+
+  // Checa se usuario ja existe
+  for (let i = 0; i < vetorUsers.length; i++) {
+    if (vetorUsers[i]['email'] === user['email']) {
+      alert('O email já existe!');
+      return;
+    }
   }
-  
-      vetorUsers = JSON.parse(localStorage.getItem('usersDb'))
-      
-  
-      if(vetorUsers === 'null'){
-  
-          users.push(user)
-          usersDb = localStorage.setItem('usersDb', JSON.stringify(users))
-  
-      }else{
-          
-          users = JSON.parse(localStorage.getItem('usersDb'))
-          users.push(user)
-      
-          localStorage.setItem('usersDb', JSON.stringify(users))
-          alert('Cadastro realizado com sucesso!')
-  
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(user['email'])) {
+    alert('Email inválido!');
+    return;
   }
+
+  users = vetorUsers; // Definir users como vetorUsers
+
+  users.push(user);
+  localStorage.setItem('usersDb', JSON.stringify(users));
+  alert('Cadastro realizado com sucesso!');
+  location.reload(); // recarrega a página para atualizar os dados na tabela do usuário
+}
+
+
+function login() {
+  const email = document.getElementById('email').value.toLowerCase();
+  const senha = document.getElementById('senha').value;
+
+  const users = JSON.parse(localStorage.getItem('usersDb'));
+    // Checa se a senha e o usuarios estao corretos
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].email === email && users[i].senha === senha) {
+      alert('Login realizado com sucesso!');
+      userLogado = true
+      window.location.href = './pages/perfil.html';
+    }
   }
+
+  if (senha == '' || email == ''){
+   alert('Preencha os campos!');
+  } else if (!userLogado){
+    alert('Email ou senha inválidos.')
+  }
+
+}
 
 
 

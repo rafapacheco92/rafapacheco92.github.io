@@ -1,3 +1,29 @@
+let btModalConexoes = document.querySelector('.botaoConexoes');
+let modalConexoes = document.querySelector('.conexoesPop');
+let btCloseModalConexoes = document.querySelector('.conexoesPop button');
+
+let btModalNot = document.querySelector('.botaoNot');
+let modalNot = document.querySelector('.notPop');
+let btCloseModalNot = document.querySelector('.notPop button');
+
+btModalConexoes.onclick = function () {
+  modalConexoes.showModal();
+};
+
+btCloseModalConexoes.onclick = function () {
+  modalConexoes.close();
+};
+
+btModalNot.onclick = function () {
+  modalNot.showModal();
+};
+
+btCloseModalNot.onclick = function () {
+  modalNot.close();
+};
+
+// ============================= Variáveis botão de deletar notificações
+
 let div00 = document.getElementById('divNotificacao00');
 let div01 = document.getElementById('divNotificacao01');
 let div02 = document.getElementById('divNotificacao02');
@@ -31,28 +57,3 @@ function Apaga(n) {
       break;
   }
 }
-
-
-let btModalConexoes = document.querySelector('.botaoConexoes');
-let modalConexoes = document.querySelector('.conexoesPop');
-let btCloseModalConexoes = document.querySelector('.conexoesPop button');
-
-let btModalNot = document.querySelector('.botaoNot');
-let modalNot = document.querySelector('.notPop');
-let btCloseModalNot = document.querySelector('.notPop button');
-
-btModalConexoes.onclick = function () {
-  modalConexoes.showModal();
-};
-
-btCloseModalConexoes.onclick = function () {
-  modalConexoes.close();
-};
-
-btModalNot.onclick = function () {
-  modalNot.showModal();
-};
-
-btCloseModalNot.onclick = function () {
-  modalNot.close();
-};
