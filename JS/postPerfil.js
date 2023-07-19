@@ -36,6 +36,14 @@ let posts = [
   },
 ];
 
+let postEdit = {
+  nome: '',
+  foto: '',
+  ingredientes: '',
+  texto: '',
+  receita: ''
+}
+
 populaPostsLocalStorage();
 
 function populaPostsLocalStorage() {
@@ -106,6 +114,15 @@ function criaPost(newPosts) {
     receita.appendChild(textoReceitaDrink);
     divNewPost.appendChild(receita);
 
+    let btnNewPost = document.createElement('a');
+    btnNewPost.setAttribute('class', 'botao');
+    btnNewPost.setAttribute('onClick', `edit(${i})`)
+    let textoBtn = document.createElement('p');
+    let conteudoTextoBtn = document.createTextNode('Editar');
+    textoBtn.appendChild(conteudoTextoBtn);
+    btnNewPost.appendChild(textoBtn);
+    divNewPost.appendChild(btnNewPost);
+
     let divNewPic = document.createElement('div');
     divNewPic.setAttribute('class', 'imagemIntro');
 
@@ -120,6 +137,18 @@ function criaPost(newPosts) {
     
   }
 }
+
+function edit(item){
+  postEdit = posts[item]
+  document.getElementById('nomeDrink') = postEdit.nome
+  document.getElementById('ingredientesInput') = postEdit.ingredientes
+  document.getElementById('textoDrink') = postEdit.texto
+  document.getElementById('receitaTexto') = postEdit.receita
+  document.getElementById('foto') = postEdit.foto
+  window.location.href = './editPost.html';
+}
+
+// =========================== Open/Close Modais
 
 let btModalConexoes = document.querySelector('.botaoConexoes');
 let modalConexoes = document.querySelector('.conexoesPop');

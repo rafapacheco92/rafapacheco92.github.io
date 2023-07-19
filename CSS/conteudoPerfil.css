@@ -91,7 +91,7 @@
   border-radius: 50%;
 }
 
-.conteudoFeed .botaoFeed {
+.conteudo .botao {
   background: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
   color: #fff;
   font-size: 1.2rem;
@@ -102,11 +102,11 @@
   cursor: pointer;
 }
 
-.botaoFeed p {
+.botao p {
   margin-top: 5px;
 }
 
-.conteudoFeed .botaoFeed p:after {
+.conteudo .botao p:after {
   content: '';
   display: block;
   height: 2px;
@@ -116,7 +116,7 @@
   transition: 0.3s;
 }
 
-.conteudoFeed .botaoFeed p:hover:after {
+.conteudo .botao p:hover:after {
   width: 100%;
 }
 
