@@ -1,213 +1,186 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>LiquID - Amigos de alguns drinks</title>
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="../../CSS/receitas.css" />
+    <meta name="description" content="liquID" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/png/favicon.ico" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>LiquID - Amigos de alguns drinks</title>
-  <link rel="stylesheet" href="../../CSS/style.css" />
-  <link rel="stylesheet" href="../../CSS/receitas.css" />
-  <meta name="description" content="liquID" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./img/png/favicon.ico" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <header>
+      <div class="header">
+        <a class="aLogo" href="./index.html"
+          ><img
+            class="logo"
+            src="../../img/png/roxo_claro_transparente - Copia.png"
+            alt="Logo"
+        /></a>
 
-<body>
-  <header>
-    <div class="header">
-      <a class="aLogo" href="./index.html"><img class="logo" src="../../img/png/roxo_claro_transparente - Copia.png"
-          alt="Logo" /></a>
-
-      <nav class="navPrimaria" aria-label="primária">
-        <ul class="headerMenu">
-          <li class="headerBotao">
-            <a class="conexoes" href="/"><img src="../../img/png/menuIcons/friends.png" />
-              <p>Conexões</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="receitas" href="../receitas.html"><img src="../../img/png/menuIcons/recipes.png" />
-              <p>Receitas</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="bar" href="../meuBar.html"><img src="../../img/png/menuIcons/barR.png" />
-              <p>Meu Bar</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="add" href="/"><img src="../../img/png/menuIcons/add.png" />
-              <p>Adicionar</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main">
-    <nav aria-label="secundária" class="aside">
-      <a href="../perfil.html">
-        <img src="../../img/perfil/perfilrafa.jpg" alt="fotoPerfil" class="ftperfil" />
-      </a>
-      <div>
-        <h2>Rafael Pacheco</h2>
-        <p>
-          Me chamo Rafael, sou de Floripa, e me divirto fazendo uns drinks.
-        </p>
+        <nav class="navPrimaria" aria-label="primária">
+          <ul class="headerMenu">
+            <li class="headerBotao">
+              <a class="conexoes" href="/"
+                ><img src="../../img/png/menuIcons/friends.png" />
+                <p>Conexões</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="receitas" href="../receitas.html"
+                ><img src="../../img/png/menuIcons/recipes.png" />
+                <p>Receitas</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="bar" href="../meuBar.html"
+                ><img src="../../img/png/menuIcons/barR.png" />
+                <p>Meu Bar</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="add" href="/"
+                ><img src="../../img/png/menuIcons/add.png" />
+                <p>Adicionar</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul>
-        <a href="../index.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/home.svg" /> Home
-          </li>
-        </a>
-        <a href="../notificacoes.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/notifications.svg" />
-            Notificações
-          </li>
-        </a>
-        <a href="../explorar.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/explore.svg" />
-            Explorar
-          </li>
-        </a>
-        <a href="../mensagens.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/chat.svg" />
-            Mensagens
-          </li>
-        </a>
-        <a href="../newPost.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/newpost.svg" /> Novo
-            post
-          </li>
-        </a>
-      </ul>
-    </nav>
-    <section>
-      <article class="conteudoReceita" aria-labelledby="label-introducao">
-        <img src="../../img/receitas/fotosPagina/greenFizz/top.jpg" />
+    </header>
 
-        <div class="textoReceita">
-          <header>
-            <h1>GREEN FIZZ</h1>
-          </header>
+    <main class="main">
+      <section>
+        <article class="conteudoReceita" aria-labelledby="label-introducao">
+          <img src="../../img/receitas/fotosPagina/greenFizz/top.jpg" />
 
-          <p>
-            Desde pequeno, eu amo o Dia de São Patrício. Honestamente, não sei
-            dizer o motivo. Não temos nenhuma ascendência irlandesa, nenhum
-            vínculo real com santos católicos e não somos conhecidos por
-            espantar cobras de lugar nenhum. Conforme fui ficando mais velho,
-            descobri o outro lado do bom e velho São Patrício: a cena das
-            bebidas alcoólicas. (Você realmente não pensa nisso quando é
-            criança.) Uma coisa que eu nunca apoiei? Cerveja artificialmente
-            verde. Uma coisa que eu faço? Coquetéis verdes. Vamos comemorar o
-            Dia de São Patrício com o Espumante Verde.
-          </p>
+          <div class="textoReceita">
+            <header>
+              <h1>GREEN FIZZ</h1>
+            </header>
 
-          <p>
-            Espumante Verde? Eu sei. Parece meio como um herói de ação, né? Na
-            verdade, se você beber o suficiente, provavelmente pode se tornar
-            um herói de ação. Existem muitos fizzes clássicos, este é um
-            deles. A receita básica é bem simples: álcool, cítrico, adoçante e
-            um pouco de água com gás.
-          </p>
-        </div>
+            <p>
+              Desde pequeno, eu amo o Dia de São Patrício. Honestamente, não sei
+              dizer o motivo. Não temos nenhuma ascendência irlandesa, nenhum
+              vínculo real com santos católicos e não somos conhecidos por
+              espantar cobras de lugar nenhum. Conforme fui ficando mais velho,
+              descobri o outro lado do bom e velho São Patrício: a cena das
+              bebidas alcoólicas. (Você realmente não pensa nisso quando é
+              criança.) Uma coisa que eu nunca apoiei? Cerveja artificialmente
+              verde. Uma coisa que eu faço? Coquetéis verdes. Vamos comemorar o
+              Dia de São Patrício com o Espumante Verde.
+            </p>
 
-        <img src="../../img/receitas/fotosPagina/greenFizz/um.jpg" />
+            <p>
+              Espumante Verde? Eu sei. Parece meio como um herói de ação, né? Na
+              verdade, se você beber o suficiente, provavelmente pode se tornar
+              um herói de ação. Existem muitos fizzes clássicos, este é um
+              deles. A receita básica é bem simples: álcool, cítrico, adoçante e
+              um pouco de água com gás.
+            </p>
+          </div>
 
-        <div class="textoReceita">
-          <p>
-            Se, por algum motivo, você não estiver com vontade de tomar um
-            fizz, mas realmente quiser uma bebida verde, experimente um
-            Grasshopper. Você ainda ganhará pontos no Dia de São Patrício por
-            estar no tema.
-          </p>
+          <img src="../../img/receitas/fotosPagina/greenFizz/um.jpg" />
 
-          <p>
-            Com o Espumante Verde, estamos usando gin (e um toque de crème de
-            menthe, verde!), suco de limão e açúcar. Para dar mais
-            efervescência, tem clara de ovo na mistura.
-          </p>
-        </div>
+          <div class="textoReceita">
+            <p>
+              Se, por algum motivo, você não estiver com vontade de tomar um
+              fizz, mas realmente quiser uma bebida verde, experimente um
+              Grasshopper. Você ainda ganhará pontos no Dia de São Patrício por
+              estar no tema.
+            </p>
 
-        <img src="../../img/receitas/fotosPagina/greenFizz/dois.jpg" />
+            <p>
+              Com o Espumante Verde, estamos usando gin (e um toque de crème de
+              menthe, verde!), suco de limão e açúcar. Para dar mais
+              efervescência, tem clara de ovo na mistura.
+            </p>
+          </div>
 
-        <div class="textoReceita">
-          <p>
-            Como é comum em coquetéis com ovos crus, não se preocupe, é
-            perfeitamente seguro. Apenas seja cuidadoso. Sempre usamos ovos
-            orgânicos, de galinhas criadas soltas. Trate-os bem. Não os deixe
-            fora da geladeira e não os guarde meses além da data de validade.
-            Em todas as bebidas e pratos com ovo cru que fizemos, nunca
-            tivemos nenhum problema.
-          </p>
-        </div>
+          <img src="../../img/receitas/fotosPagina/greenFizz/dois.jpg" />
 
-        <img src="../../img/receitas/fotosPagina/greenFizz/tres.jpg" />
+          <div class="textoReceita">
+            <p>
+              Como é comum em coquetéis com ovos crus, não se preocupe, é
+              perfeitamente seguro. Apenas seja cuidadoso. Sempre usamos ovos
+              orgânicos, de galinhas criadas soltas. Trate-os bem. Não os deixe
+              fora da geladeira e não os guarde meses além da data de validade.
+              Em todas as bebidas e pratos com ovo cru que fizemos, nunca
+              tivemos nenhum problema.
+            </p>
+          </div>
 
-        <div class="textoReceita">
-          <p>
-            Seja esperto, seja seguro e não deverá ter nenhum problema. Como
-            tem clara de ovo, é outro coquetel que você vai querer agitar um
-            pouco mais para criar mais espuma e bolhas para a água com gás
-            pegar. Chega de introdução, vamos ao Espumante Verde e um pouco de
-            ação verde para o Dia de São Patrício!
-          </p>
-        </div>
+          <img src="../../img/receitas/fotosPagina/greenFizz/tres.jpg" />
 
-        <img src="../../img/receitas/fotosPagina/greenFizz/quatro.jpg" />
-        <img src="../../img/receitas/fotosPagina/greenFizz/cinco.jpg" />
+          <div class="textoReceita">
+            <p>
+              Seja esperto, seja seguro e não deverá ter nenhum problema. Como
+              tem clara de ovo, é outro coquetel que você vai querer agitar um
+              pouco mais para criar mais espuma e bolhas para a água com gás
+              pegar. Chega de introdução, vamos ao Espumante Verde e um pouco de
+              ação verde para o Dia de São Patrício!
+            </p>
+          </div>
 
-        <div class="textoReceita">
-          <h2>Ingredientes</h2>
+          <img src="../../img/receitas/fotosPagina/greenFizz/quatro.jpg" />
+          <img src="../../img/receitas/fotosPagina/greenFizz/cinco.jpg" />
 
-          <ul>
-            <li>- 60 ml de gin.</li>
-            <li>- 1 cholher de chá de creme de menta.</li>
-            <li>- Uma colher de chá de açucar.</li>
-            <li>- 30 ml de suco de limão.</li>
-            <li>- 1 clara de ovo.</li>
-            <li>- Água com gás.</li>
-            <li>- 1 tira de casca de limão.</li>
-            <li>- Gelo.</li>
-            <li>- Copo: Collins</li>
-          </ul>
-        </div>
+          <div class="textoReceita">
+            <h2>Ingredientes</h2>
 
-        <div class="textoReceita">
-          <h2>Como fazer</h2>
+            <ul>
+              <li>- 60 ml de gin.</li>
+              <li>- 1 cholher de chá de creme de menta.</li>
+              <li>- Uma colher de chá de açucar.</li>
+              <li>- 30 ml de suco de limão.</li>
+              <li>- 1 clara de ovo.</li>
+              <li>- Água com gás.</li>
+              <li>- 1 tira de casca de limão.</li>
+              <li>- Gelo.</li>
+              <li>- Copo: Collins</li>
+            </ul>
+          </div>
 
-          <ul>
-            <li>
-              - Adicione o gin, o crème de menthe, o suco de limão, o açúcar e
-              a clara de ovo no seu shaker com gelo.
-            </li>
-            <li>- Mexa bem.</li>
-            <li>
-              - Coloque o coquetel no shaker e adicione gelo no copo Collins.
-            </li>
-            <li>- Despeje o Green Fizz bem agitado no copo Collins.</li>
-            <li>- Complete com água com gás.</li>
-            <li>- Decore com uma tira de casca de limão.</li>
-          </ul>
-        </div>
+          <div class="textoReceita">
+            <h2>Como fazer</h2>
 
-        <img class="imgBottom" src="../../img/receitas/fotosPagina/greenFizz/seis.jpg" />
-      </article>
-    </section>
-  </main>
+            <ul>
+              <li>
+                - Adicione o gin, o crème de menthe, o suco de limão, o açúcar e
+                a clara de ovo no seu shaker com gelo.
+              </li>
+              <li>- Mexa bem.</li>
+              <li>
+                - Coloque o coquetel no shaker e adicione gelo no copo Collins.
+              </li>
+              <li>- Despeje o Green Fizz bem agitado no copo Collins.</li>
+              <li>- Complete com água com gás.</li>
+              <li>- Decore com uma tira de casca de limão.</li>
+            </ul>
+          </div>
 
-  <footer class="rodape">
-    <p>Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a historia e honramos todo suor gasto para
-      extrair somente o melhor de cada ingrediente. Liquid, sejam bem vindos.</p>
-  </footer>
-</body>
+          <img
+            class="imgBottom"
+            src="../../img/receitas/fotosPagina/greenFizz/seis.jpg"
+          />
+        </article>
+      </section>
+    </main>
 
+    <footer class="rodape">
+      <p>
+        Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
+        historia e honramos todo suor gasto para extrair somente o melhor de
+        cada ingrediente. Liquid, sejam bem vindos.
+      </p>
+    </footer>
+  </body>
 </html>

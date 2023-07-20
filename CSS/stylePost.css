@@ -1,12 +1,5 @@
 @import url(global.css);
 
-
-.main {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 40px;
-}
-
 /* CONTEUDO */
 
 .meuPost {
@@ -128,4 +121,8 @@ h2 {
 .button-15:focus {
   box-shadow: rgba(188, 131, 253, 0.5) 0 0 0 3px;
   outline: none;
+}
+
+.divInpLab {
+  display: block;
 }

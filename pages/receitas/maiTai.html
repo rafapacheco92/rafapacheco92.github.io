@@ -1,191 +1,164 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>LiquID - Amigos de alguns drinks</title>
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="../../CSS/receitas.css" />
+    <meta name="description" content="liquID" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/png/favicon.ico" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>LiquID - Amigos de alguns drinks</title>
-  <link rel="stylesheet" href="../../CSS/style.css" />
-  <link rel="stylesheet" href="../../CSS/receitas.css" />
-  <meta name="description" content="liquID" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./img/png/favicon.ico" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <header>
+      <div class="header">
+        <a class="aLogo" href="./index.html"
+          ><img
+            class="logo"
+            src="../../img/png/roxo_claro_transparente - Copia.png"
+            alt="Logo"
+        /></a>
 
-<body>
-  <header>
-    <div class="header">
-      <a class="aLogo" href="./index.html"><img class="logo" src="../../img/png/roxo_claro_transparente - Copia.png"
-          alt="Logo" /></a>
-
-      <nav class="navPrimaria" aria-label="primária">
-        <ul class="headerMenu">
-          <li class="headerBotao">
-            <a class="conexoes" href="/"><img src="../../img/png/menuIcons/friends.png" />
-              <p>Conexões</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="receitas" href="../receitas.html"><img src="../../img/png/menuIcons/recipes.png" />
-              <p>Receitas</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="bar" href="../meuBar.html"><img src="../../img/png/menuIcons/barR.png" />
-              <p>Meu Bar</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="add" href="/"><img src="../../img/png/menuIcons/add.png" />
-              <p>Adicionar</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main">
-    <nav aria-label="secundária" class="aside">
-      <a href="../perfil.html">
-        <img src="../../img/perfil/perfilrafa.jpg" alt="fotoPerfil" class="ftperfil" />
-      </a>
-      <div>
-        <h2>Rafael Pacheco</h2>
-        <p>
-          Me chamo Rafael, sou de Floripa, e me divirto fazendo uns drinks.
-        </p>
+        <nav class="navPrimaria" aria-label="primária">
+          <ul class="headerMenu">
+            <li class="headerBotao">
+              <a class="conexoes" href="/"
+                ><img src="../../img/png/menuIcons/friends.png" />
+                <p>Conexões</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="receitas" href="../receitas.html"
+                ><img src="../../img/png/menuIcons/recipes.png" />
+                <p>Receitas</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="bar" href="../meuBar.html"
+                ><img src="../../img/png/menuIcons/barR.png" />
+                <p>Meu Bar</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="add" href="/"
+                ><img src="../../img/png/menuIcons/add.png" />
+                <p>Adicionar</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul>
-        <a href="../index.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/home.svg" /> Home
-          </li>
-        </a>
-        <a href="../notificacoes.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/notifications.svg" />
-            Notificações
-          </li>
-        </a>
-        <a href="../explorar.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/explore.svg" />
-            Explorar
-          </li>
-        </a>
-        <a href="../mensagens.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/chat.svg" />
-            Mensagens
-          </li>
-        </a>
-        <a href="../newPost.html">
-          <li>
-            <img src="../../img/png/menuIcons/menuLateral/newpost.svg" /> Novo
-            post
-          </li>
-        </a>
-      </ul>
-    </nav>
-    <section>
-      <article class="conteudoReceita" aria-labelledby="label-introducao">
-        <img src="../../img/receitas/fotosPagina/maiTai/top.jpg" />
+    </header>
 
-        <div class="textoReceita">
-          <header>
-            <h1>MAI TAI</h1>
-          </header>
+    <main class="main">
+      <section>
+        <article class="conteudoReceita" aria-labelledby="label-introducao">
+          <img src="../../img/receitas/fotosPagina/maiTai/top.jpg" />
 
-          <p>
-            Quando eu imagino me afastar da rotina diária, geralmente gosto de
-            entrar no clima tropical - e quando penso em tropical, só existe
-            uma bebida para mim: um Mai Tai. Não estou falando daquelas coisas
-            brilham no escuro servidas por uma máquina, estou falando de um
-            clássico, original, que vale a pena procurar ingredientes
-            especiais para ter. Seus papilas gustativas e sua imaginação irão
-            agradecer.
-          </p>
-        </div>
+          <div class="textoReceita">
+            <header>
+              <h1>MAI TAI</h1>
+            </header>
 
-        <img src="../../img/receitas/fotosPagina/maiTai/um.jpg" />
+            <p>
+              Quando eu imagino me afastar da rotina diária, geralmente gosto de
+              entrar no clima tropical - e quando penso em tropical, só existe
+              uma bebida para mim: um Mai Tai. Não estou falando daquelas coisas
+              brilham no escuro servidas por uma máquina, estou falando de um
+              clássico, original, que vale a pena procurar ingredientes
+              especiais para ter. Seus papilas gustativas e sua imaginação irão
+              agradecer.
+            </p>
+          </div>
 
-        <div class="textoReceita">
-          <p>
-            Segundo a história, quando o próprio Trader Vic (Victor J.
-            Bergeron) inventou essa bebida, ele a ofereceu a alguns amigos do
-            Taiti e eles exclamaram: "Mai tai - roa ae!" O que, em tahitiano,
-            significa "Fora deste mundo - o melhor!" Para você e para mim,
-            isso significa que vale a pena usar ingredientes de qualidade.
-            Para este clássico Mai Tai, vamos usar apenas duas bebidas
-            alcoólicas, então invista um pouco mais. Você merece.
-          </p>
+          <img src="../../img/receitas/fotosPagina/maiTai/um.jpg" />
 
-          <p>
-            Ao analisar os ingredientes, você vê o orgeat. "Orgeat?" você
-            pergunta. Eu também me perguntei - é um xarope de amêndoa. Você
-            pode fazer o seu próprio se estiver se sentindo inspirado. Ou, se
-            estiver se sentindo um pouco preguiçoso (não vou julgar, comprei o
-            meu para este coquetel!), você encontra na internet. O movimento
-            de coquetéis artesanais certamente tem suas vantagens.
-          </p>
-        </div>
+          <div class="textoReceita">
+            <p>
+              Segundo a história, quando o próprio Trader Vic (Victor J.
+              Bergeron) inventou essa bebida, ele a ofereceu a alguns amigos do
+              Taiti e eles exclamaram: "Mai tai - roa ae!" O que, em tahitiano,
+              significa "Fora deste mundo - o melhor!" Para você e para mim,
+              isso significa que vale a pena usar ingredientes de qualidade.
+              Para este clássico Mai Tai, vamos usar apenas duas bebidas
+              alcoólicas, então invista um pouco mais. Você merece.
+            </p>
 
-        <img src="../../img/receitas/fotosPagina/maiTai/dois.jpg" />
+            <p>
+              Ao analisar os ingredientes, você vê o orgeat. "Orgeat?" você
+              pergunta. Eu também me perguntei - é um xarope de amêndoa. Você
+              pode fazer o seu próprio se estiver se sentindo inspirado. Ou, se
+              estiver se sentindo um pouco preguiçoso (não vou julgar, comprei o
+              meu para este coquetel!), você encontra na internet. O movimento
+              de coquetéis artesanais certamente tem suas vantagens.
+            </p>
+          </div>
 
-        <div class="textoReceita">
-          <p>
-            Para o rum e o curaçao, use o que você preferir. A menos que você
-            use curaçao azul. Nesse caso, eu vou até aí, balançar a cabeça e
-            julgá-lo. Não faça isso. (Tem o seu lugar, como no shot Captain
-            America, mas não aqui.)
-          </p>
+          <img src="../../img/receitas/fotosPagina/maiTai/dois.jpg" />
 
-          <p>Aloha!</p>
-        </div>
+          <div class="textoReceita">
+            <p>
+              Para o rum e o curaçao, use o que você preferir. A menos que você
+              use curaçao azul. Nesse caso, eu vou até aí, balançar a cabeça e
+              julgá-lo. Não faça isso. (Tem o seu lugar, como no shot Captain
+              America, mas não aqui.)
+            </p>
 
-        <img src="../../img/receitas/fotosPagina/maiTai/tres.jpg" />
+            <p>Aloha!</p>
+          </div>
 
-        <div class="textoReceita">
-          <h2>Ingredientes</h2>
+          <img src="../../img/receitas/fotosPagina/maiTai/tres.jpg" />
 
-          <ul>
-            <li>- 120 ml de rum</li>
-            <li>- 60 ml de suco de limão</li>
-            <li>- 30ml ml de curaçao de laranja</li>
-            <li>- 30ml ml de xarope de orgeat</li>
-            <li>- 8 ml de xarope simples</li>
-            <li>- Gelo</li>
-            <li>- Copo: Collins</li>
-          </ul>
-        </div>
+          <div class="textoReceita">
+            <h2>Ingredientes</h2>
 
-        <div class="textoReceita">
-          <h2>Como fazer</h2>
-          <ul>
-            <li>
-              - Coloque todos os ingredientes na coqueteleira com o gelo.
-            </li>
-            <li>- Agite bem.</li>
-            <li>- Despeje em seu copo Collins.</li>
-            <li>
-              - Pontos extras se você substituir o copo Collins por uma caneca
-              tiki mug.
-            </li>
-          </ul>
-        </div>
+            <ul>
+              <li>- 120 ml de rum</li>
+              <li>- 60 ml de suco de limão</li>
+              <li>- 30ml ml de curaçao de laranja</li>
+              <li>- 30ml ml de xarope de orgeat</li>
+              <li>- 8 ml de xarope simples</li>
+              <li>- Gelo</li>
+              <li>- Copo: Collins</li>
+            </ul>
+          </div>
 
-        <img class="imgBottom" src="../../img/receitas/fotosPagina/maiTai/quatro.jpg" />
-      </article>
-    </section>
-  </main>
+          <div class="textoReceita">
+            <h2>Como fazer</h2>
+            <ul>
+              <li>
+                - Coloque todos os ingredientes na coqueteleira com o gelo.
+              </li>
+              <li>- Agite bem.</li>
+              <li>- Despeje em seu copo Collins.</li>
+              <li>
+                - Pontos extras se você substituir o copo Collins por uma caneca
+                tiki mug.
+              </li>
+            </ul>
+          </div>
 
-  <footer class="rodape">
-    <p>Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a historia e honramos todo suor gasto para
-      extrair somente o melhor de cada ingrediente. Liquid, sejam bem vindos.</p>
-  </footer>
-</body>
+          <img
+            class="imgBottom"
+            src="../../img/receitas/fotosPagina/maiTai/quatro.jpg"
+          />
+        </article>
+      </section>
+    </main>
 
+    <footer class="rodape">
+      <p>
+        Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
+        historia e honramos todo suor gasto para extrair somente o melhor de
+        cada ingrediente. Liquid, sejam bem vindos.
+      </p>
+    </footer>
+  </body>
 </html>

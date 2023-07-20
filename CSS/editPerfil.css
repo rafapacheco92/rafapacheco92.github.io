@@ -1,0 +1,42 @@
+@import url(./global.css);
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.editPerfilConteudo{
+    width: 1000px;
+    justify-items: center;
+    background: #000;
+    color: #fff;
+    padding: 30px;
+    text-align: right;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    align-content: center;
+    justify-items: end;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #dda0dd, var(--roxoEscuro));
+    border-image-slice: 1;
+    border-radius: 6px;
+}
+
+.divEditPerfil {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    background: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Poppins-Light';
+}

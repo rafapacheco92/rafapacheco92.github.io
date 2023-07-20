@@ -1,8 +1,7 @@
 @import url(./global.css);
 
-.main {
+.mainPerfil {
   display: grid;
-  /* width: 70vw; */
   grid-template-columns: 1fr 3fr;
   gap: 40px;
 }
@@ -13,8 +12,8 @@
 
 /* CONTEUDO */
 
-
-.conteudo, .conteudoFeed {
+.conteudo,
+.conteudoFeed {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
@@ -91,7 +90,8 @@
   border-radius: 50%;
 }
 
-.conteudo .botao {
+.conteudo .botao,
+.conteudoFeed .botao {
   background: linear-gradient(var(--roxoClaro), var(--roxoEscuro));
   color: #fff;
   font-size: 1.2rem;
@@ -106,7 +106,8 @@
   margin-top: 5px;
 }
 
-.conteudo .botao p:after {
+.conteudo .botao p:after,
+.conteudoFeed .botao p:after {
   content: '';
   display: block;
   height: 2px;
@@ -116,7 +117,8 @@
   transition: 0.3s;
 }
 
-.conteudo .botao p:hover:after {
+.conteudo .botao p:hover:after,
+.conteudoFeed .botao p:hover:after {
   width: 100%;
 }
 
@@ -125,13 +127,12 @@
   align-items: center;
   width: 100%;
   justify-content: end;
-  margin-right: -35px
+  margin-right: -35px;
 }
 
 .perfilInPost p {
   font-size: 1.5rem;
   font-weight: bold;
-
 }
 
 .imagemIntroFeed img {

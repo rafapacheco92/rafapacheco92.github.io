@@ -43,20 +43,7 @@ function addIngredientes() {
   objPost.ingredientes = ingredientesPost;
   objPost.receita = textoReceita;
   objPost.autor = autor.nome;
-  switch (autor.nome) {
-    case 'RAFAEL':
-      objPost.fotoAutor = '../img/perfil/rafael.jpg';
-      break;
-    case 'SAULO':
-      objPost.fotoAutor = '../img/perfil/fotoPerfilSaulo.jpg';
-      break;
-    case 'RODRIGO':
-      objPost.fotoAutor = '../img/perfil/rodrigo.jfif';
-      break;
-    default: {
-      objPost.fotoAutor = '../img/perfil/user.avif';
-    }
-  }
+  debugger;
 
   let nomeFoto = foto.split('');
   nomeFoto.splice(0, 12);

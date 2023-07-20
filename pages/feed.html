@@ -1,308 +1,345 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>LiquID - Amigos de alguns drinks</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <meta name="description" content="liquID" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/png/favicon.ico" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>LiquID - Amigos de alguns drinks</title>
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <meta name="description" content="liquID" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../img/png/favicon.ico" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <div class="header">
-      <div class="divLogo">
-        <a class="aLogo" href="./perfil.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
-            alt="Logo" /></a>
+  <body>
+    <header>
+      <div class="header">
+        <div class="divLogo">
+          <a class="aLogo" href="./perfil.html"
+            ><img
+              class="logo"
+              src="../img/png/roxo_claro_transparente - Copia.png"
+              alt="Logo"
+          /></a>
+        </div>
+        <nav class="navPrimaria" aria-label="primária">
+          <ul class="headerMenu">
+            <li class="headerBotao">
+              <a class="conexoes botaoConexoes"
+                ><img src="../img/png/menuIcons/friends.png" />
+                <p>Conexões</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="receitas" href="../pages/receitas.html"
+                ><img src="../img/png/menuIcons/recipes.png" />
+                <p>Receitas</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="bar" href="../pages/meuBar.html"
+                ><img src="../img/png/menuIcons/barR.png" />
+                <p>Meu Bar</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="add" href="../pages/newPost.html"
+                ><img src="../img/png/menuIcons/add.png" />
+                <p>Publicar</p>
+              </a>
+            </li>
+            <li class="headerBotao headerBotaoExit">
+              <a class="add" href="../index.html"
+                ><img class="exit" src="../img/png/menuIcons/exit.png" />
+                <p></p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navPrimaria" aria-label="primária">
-        <ul class="headerMenu">
-          <li class="headerBotao">
-            <a class="conexoes botaoConexoes"><img src="../img/png/menuIcons/friends.png" />
-              <p>Conexões</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="receitas" href="../pages/receitas.html"><img src="../img/png/menuIcons/recipes.png" />
-              <p>Receitas</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="bar" href="../pages/meuBar.html"><img src="../img/png/menuIcons/barR.png" />
-              <p>Meu Bar</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="add" href="../pages/newPost.html"><img src="../img/png/menuIcons/add.png" />
-              <p>Publicar</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-
-  <dialog class="conexoesPop">
-
-    <div class="conexoesConteudo">
-      <div class="topModal">
-        <div class="divH2">
-          <h2>Conexões</h2>
+    <dialog class="conexoesPop">
+      <div class="conexoesConteudo">
+        <div class="topModal">
+          <div class="divH2">
+            <h2>Conexões</h2>
+          </div>
+          <div class="divBotaoX"><button>X</button></div>
         </div>
-        <div class="divBotaoX"><button>X</button></div>
-      </div>
-      <div class="bottomModal">
-        <div class="conexaoBorda">
-          <img src="../img/perfil/perfilrafa.jpg" alt="">
-          <p>Rafael Pacheco</p>
-        </div>
-        <div class="conexaoBorda">
-          <img src="../img/perfil/fotoPerfilSaulo.jpg" alt="">
-          <p>Saulo Tavares</p>
-        </div>
-        <div class="conexao">
-          <img src="../img/perfil/ftyaovi.jpg" alt="">
-          <p>Kangnivi Yaovi</p>
-        </div>
-      </div>
-    </div>
-
-  </dialog>
-
-  <dialog class="notPop">
-
-    <div class="notConteudo">
-      <div class="topModal">
-        <div class="divH2">
-          <h2>Notificações</h2>
-        </div>
-        <div class="divBotaoX"><button>X</button></div>
-      </div>
-      <div class="bottomModal">
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Saulo adicionou uma nova receita!
-          <p>
-        </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Rodrigo adicionou uma nova receita!
-          <p>
-        </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Yaovi adicionou uma nova receita!
-          <p>
-        </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
-        </div>
-        <div class="notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Saulo aceitou sua solicitação de conexão.
-          <p>
-        </div>
-        <div class="not notBorda">
-          <button class="btNotficiation" onclick="Apaga()"><img class="check"
-              src="../img/perfil/check-circle-svgrepo-com.svg"></button>
-          <p>Yaovi aceitou sua solicitação de conexão.</p>
-        </div>
-      </div>
-    </div>
-
-  </dialog>
-
-
-  <main class="main" id="mainId">
-    <nav aria-label="secundária" class="aside asidePerfil">
-      <a href="../pages/perfil.html">
-        <img src="../img/perfil/perfilrafa.jpg" alt="fotoPerfil" class="ftperfil" />
-      </a>
-      <div>
-        <h2>Rafael Pacheco</h2>
-        <p>
-          Me chamo Rafael, sou de Floripa, e me divirto fazendo uns drinks.
-        </p>
-      </div>
-      <ul>
-        <a href="./index.html">
-          <li><img src="../img/png/menuIcons/menuLateral/home.svg"> Home</li>
-        </a>
-        <a class="botaoNot">
-          <li><img src="../img/png/menuIcons/menuLateral/notifications.svg"> Notificações</li>
-        </a>
-        <a href="./news.html">
-          <li><img src="../img/png/menuIcons/menuLateral/explore.svg"> Explorar</li>
-        </a>
-
-      </ul>
-    </nav>
-    <section id="posts">
-      <article class="conteudoFeed" aria-labelledby="label-introducao">
-        <div class="introducao feed" id="introducao">
-          <div class="perfilInPost">
+        <div class="bottomModal">
+          <div class="conexaoBorda">
+            <img src="../img/perfil/perfilrafa.jpg" alt="" />
             <p>Rafael Pacheco</p>
-            <img src="../img/perfil/perfilrafa.jpg" alt="fotoPerfil" class="ftperfilPost" />
           </div>
-          <h2 id="label-introducao">
-            SUPERB COQUETEL: Um enganoso drink de cerveja amanteigada.
-          </h2>
-          <p id="texto-conteudo" class="textoConteudo">
-            Aqui em casa a gente tem a tradição de celebramos tudo o que é
-            ótimo sobre o exagero brasileiro em um único dia, geralmente
-            assistindo um Masterchef. principalmente na final. A comida é boa.
-            Este ano, decidi que precisávamos de um coquetel edição especial
-            para acompanhar, apresentando o Superb!
-          </p>
-          <a class="botaoFeed" href="./perfil.html">
-            <p>RECEITA</p>
-          </a>
-        </div>
-        <div class="imagemIntroFeed">
-          <img src="../img/posts/superb.jpg" />
-        </div>
-      </article>
-
-      <article class="conteudoFeed" aria-labelledby="label-introducao">
-        <div class="introducao feed" id="introducao">
-          <div class="perfilInPost">
-            <p>Rodrigo Ramos</p>
-            <img src="../img/perfil/rodrigo.jfif" alt="fotoPerfil" class="ftperfilPost" />
-          </div>
-          <h2 id="label-introducao">
-            COQUETEL ACHOCOLATADO COM AMENDOAS:
-          </h2>
-          <p id="texto-conteudo" class="textoConteudo">
-            Curiosidade sobre mim, eu amo chocolate. Eu adoro em todas as formas. Quando posso tê-lo em forma de
-            coquetel, fico muito feliz. Há até um boato (ou lenda) de que toda vez que vou à Vegas (algo que tento fazer
-            pelo menos uma vez por ano), gosto de começar todos os dias com um Chocolate Martini.
-          </p>
-          <a class="botaoFeed" href="./perfilRodrigo.html">
-            <p>RECEITA</p>
-          </a>
-        </div>
-        <div class="imagemIntroFeed">
-          <img src="../img/posts/chocolate.jpg" />
-        </div>
-      </article>
-
-      <article class="conteudoFeed" aria-labelledby="label-introducao">
-        <div class="introducao feed" id="introducao">
-          <div class="perfilInPost">
+          <div class="conexaoBorda">
+            <img src="../img/perfil/fotoPerfilSaulo.jpg" alt="" />
             <p>Saulo Tavares</p>
-            <img src="../img/perfil/fotoPerfilSaulo.jpg" alt="fotoPerfil" class="ftperfilPost" />
           </div>
-          <h2 id="label-introducao">
-            LUCID FLY: Um enganoso drink de cerveja amanteigada.
-          </h2>
-          <p id="texto-conteudo" class="textoConteudo">
-            Essa eu fiz para um casal de amigos, que estava começando uma banda de rock. Living like a rockstar.
-            Embarque nesse vôo lucido.
-          </p>
-          <a class="botaoFeed" href="./perfilSaulo.html">
-            <p>RECEITA</p>
-          </a>
-        </div>
-        <div class="imagemIntroFeed">
-          <img src="../img/posts/lucidFly.jpg" />
-        </div>
-      </article>
-
-      <article class="conteudoFeed" aria-labelledby="label-introducao">
-        <div class="introducao feed">
-          <div class="perfilInPost">
-            <p>Rodrigo Ramos</p>
-            <img src="../img/perfil/rodrigo.jfif" alt="fotoPerfil" class="ftperfilPost" />
+          <div class="conexao">
+            <img src="../img/perfil/ftyaovi.jpg" alt="" />
+            <p>Kangnivi Yaovi</p>
           </div>
-          <h2 id="label-introducao">
-            HORCHATA
-          </h2>
-          <p id="texto-conteudo" class="textoConteudo">
-            Se você não conhece horchata, é um elixir mágico de sabor - pense nela como um pudim de arroz, mas em forma
-            de bebida e mais leve. É refrescante. Sabendo disso, era apenas uma questão de tempo para eu enfrentar essa
-            bebida mais incrível em forma de álcool, vamos começar com o Horchata!
-          </p>
-          <a class="botaoFeed" href="./perfilRodrigo.html">
-            <p>RECEITA</p>
-          </a>
         </div>
-        <div class="imagemIntroFeed">
-          <img src="../img/posts/horchata.jpg" />
-        </div>
-      </article>
+      </div>
+    </dialog>
 
-      <article class="conteudoFeed" aria-labelledby="label-introducao">
-        <div class="introducao feed">
-          <div class="perfilInPost">
-            <p>Saulo Tavares</p>
-            <img src="../img/perfil/fotoPerfilSaulo.jpg" alt="fotoPerfil" class="ftperfilPost" />
+    <dialog class="notPop">
+      <div class="notConteudo">
+        <div class="topModal">
+          <div class="divH2">
+            <h2>Notificações</h2>
           </div>
-          <h2 id="label-introducao">
-            BLACK VELVET
-          </h2>
-          <p id="texto-conteudo" class="textoConteudo">
-            Ah, St. Patrick day - sempre fui fã. Desde a comida até a música e a desculpa para usar verde, tudo é
-            mágico. Caramba, isso foi antes mesmo de eu perceber que era um ótimo dia para tomar uma caneca (ou três) de
-            cerveja. No entanto, às vezes você quer mais do que apenas uma caneca solitária, talvez até algo que não
-            seja verde. Para esses momentos, aproveite um Black Velvet!
-          </p>
-          <a class="botaoFeed" href="./perfilRodrigo.html">
-            <p>RECEITA</p>
-          </a>
+          <div class="divBotaoX"><button>X</button></div>
         </div>
-        <div class="imagemIntroFeed">
-          <img src="../img/posts/blackVelvet.jpg" />
-        </div>
-      </article>
-
-      <article class="conteudoFeed" aria-labelledby="label-introducao">
-        <div class="introducao feed" id="introducao">
-          <div class="perfilInPost">
-            <p>Rafael Pacheco</p>
-            <img src="../img/perfil/perfilrafa.jpg" alt="fotoPerfil" class="ftperfilPost" />
+        <div class="bottomModal">
+          <div class="notBorda">
+            <button class="btNotficiation" onclick="Apaga()">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Saulo adicionou uma nova receita!</p>
+            <p></p>
           </div>
-          <h2 id="label-introducao">
-            VALENTINE AMARGO: Para um dia dos namorados amargo.
-          </h2>
-          <p id="texto-conteudo" class="textoConteudo">
-            Dia dos Namorados, ah, que época mágica do ano. Tudo é
-            cor-de-rosa, fofo e cheio de sentimentos melosos e "bleh". Não é
-            realmente a minha praia. Claro, vou comemorar, mas é mais um
-            momento para ficar em casa, preparar uma boa refeição.
-          </p>
-          <a class="botaoFeed" href="./perfil.html">
-            <p>RECEITA</p>
-          </a>
+
+          <div class="notBorda">
+            <button class="btNotficiation" onclick="Apaga()">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Rodrigo adicionou uma nova receita!</p>
+            <p></p>
+          </div>
+
+          <div class="notBorda">
+            <button class="btNotficiation" onclick="Apaga()">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Yaovi adicionou uma nova receita!</p>
+            <p></p>
+          </div>
+
+          <div class="notBorda">
+            <button class="btNotficiation" onclick="Apaga()">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
+          </div>
+          <div class="notBorda">
+            <button class="btNotficiation" onclick="Apaga()">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Saulo aceitou sua solicitação de conexão.</p>
+            <p></p>
+          </div>
+
+          <div class="not notBorda">
+            <button class="btNotficiation" onclick="Apaga()">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Yaovi aceitou sua solicitação de conexão.</p>
+          </div>
         </div>
-        <div class="imagemIntroFeed">
-          <img src="../img/posts/valentine.jpg" />
-        </div>
-      </article>
+      </div>
+    </dialog>
 
+    <main class="main" id="mainId">
+      <section id="posts">
+        <article class="conteudoFeed" aria-labelledby="label-introducao">
+          <div class="introducao feed" id="introducao">
+            <div class="perfilInPost">
+              <p>Rafael Pacheco</p>
+              <img
+                src="../img/perfil/perfilrafa.jpg"
+                alt="fotoPerfil"
+                class="ftperfilPost"
+              />
+            </div>
+            <h2 id="label-introducao">
+              SUPERB COQUETEL: Um enganoso drink de cerveja amanteigada.
+            </h2>
+            <p id="texto-conteudo" class="textoConteudo">
+              Aqui em casa a gente tem a tradição de celebramos tudo o que é
+              ótimo sobre o exagero brasileiro em um único dia, geralmente
+              assistindo um Masterchef. principalmente na final. A comida é boa.
+              Este ano, decidi que precisávamos de um coquetel edição especial
+              para acompanhar, apresentando o Superb!
+            </p>
+            <a class="botao" href="./perfil.html">
+              <p>RECEITA</p>
+            </a>
+          </div>
+          <div class="imagemIntroFeed">
+            <img src="../img/posts/superb.jpg" />
+          </div>
+        </article>
 
-    </section>
-  </main>
+        <article class="conteudoFeed" aria-labelledby="label-introducao">
+          <div class="introducao feed" id="introducao">
+            <div class="perfilInPost">
+              <p>Rodrigo Ramos</p>
+              <img
+                src="../img/perfil/rodrigo.jfif"
+                alt="fotoPerfil"
+                class="ftperfilPost"
+              />
+            </div>
+            <h2 id="label-introducao">COQUETEL ACHOCOLATADO COM AMENDOAS:</h2>
+            <p id="texto-conteudo" class="textoConteudo">
+              Curiosidade sobre mim, eu amo chocolate. Eu adoro em todas as
+              formas. Quando posso tê-lo em forma de coquetel, fico muito feliz.
+              Há até um boato (ou lenda) de que toda vez que vou à Vegas (algo
+              que tento fazer pelo menos uma vez por ano), gosto de começar
+              todos os dias com um Chocolate Martini.
+            </p>
+            <a class="botao" href="./perfilRodrigo.html">
+              <p>RECEITA</p>
+            </a>
+          </div>
+          <div class="imagemIntroFeed">
+            <img src="../img/posts/chocolate.jpg" />
+          </div>
+        </article>
 
-  <footer class="rodape">
-    <p>
-      Não gostamos de canudinhos e mini guarda-chuvas em prol da causa
-      ambiental, respeitamos a historia e honramos todo suor gasto para
-      extrair somente o melhor de cada ingrediente. Liquid, sejam bem vindos.
-    </p>
-  </footer>
-  <script src="../JS/postPerfilDialog.js"></script>
-</body>
+        <article class="conteudoFeed" aria-labelledby="label-introducao">
+          <div class="introducao feed" id="introducao">
+            <div class="perfilInPost">
+              <p>Saulo Tavares</p>
+              <img
+                src="../img/perfil/fotoPerfilSaulo.jpg"
+                alt="fotoPerfil"
+                class="ftperfilPost"
+              />
+            </div>
+            <h2 id="label-introducao">
+              LUCID FLY: Um enganoso drink de cerveja amanteigada.
+            </h2>
+            <p id="texto-conteudo" class="textoConteudo">
+              Essa eu fiz para um casal de amigos, que estava começando uma
+              banda de rock. Living like a rockstar. Embarque nesse vôo lucido.
+            </p>
+            <a class="botao" href="./perfilSaulo.html">
+              <p>RECEITA</p>
+            </a>
+          </div>
+          <div class="imagemIntroFeed">
+            <img src="../img/posts/lucidFly.jpg" />
+          </div>
+        </article>
 
+        <article class="conteudoFeed" aria-labelledby="label-introducao">
+          <div class="introducao feed">
+            <div class="perfilInPost">
+              <p>Rodrigo Ramos</p>
+              <img
+                src="../img/perfil/rodrigo.jfif"
+                alt="fotoPerfil"
+                class="ftperfilPost"
+              />
+            </div>
+            <h2 id="label-introducao">HORCHATA</h2>
+            <p id="texto-conteudo" class="textoConteudo">
+              Se você não conhece horchata, é um elixir mágico de sabor - pense
+              nela como um pudim de arroz, mas em forma de bebida e mais leve. É
+              refrescante. Sabendo disso, era apenas uma questão de tempo para
+              eu enfrentar essa bebida mais incrível em forma de álcool, vamos
+              começar com o Horchata!
+            </p>
+            <a class="botao" href="./perfilRodrigo.html">
+              <p>RECEITA</p>
+            </a>
+          </div>
+          <div class="imagemIntroFeed">
+            <img src="../img/posts/horchata.jpg" />
+          </div>
+        </article>
+
+        <article class="conteudoFeed" aria-labelledby="label-introducao">
+          <div class="introducao feed">
+            <div class="perfilInPost">
+              <p>Saulo Tavares</p>
+              <img
+                src="../img/perfil/fotoPerfilSaulo.jpg"
+                alt="fotoPerfil"
+                class="ftperfilPost"
+              />
+            </div>
+            <h2 id="label-introducao">BLACK VELVET</h2>
+            <p id="texto-conteudo" class="textoConteudo">
+              Ah, St. Patrick day - sempre fui fã. Desde a comida até a música e
+              a desculpa para usar verde, tudo é mágico. Caramba, isso foi antes
+              mesmo de eu perceber que era um ótimo dia para tomar uma caneca
+              (ou três) de cerveja. No entanto, às vezes você quer mais do que
+              apenas uma caneca solitária, talvez até algo que não seja verde.
+              Para esses momentos, aproveite um Black Velvet!
+            </p>
+            <a class="botao" href="./perfilRodrigo.html">
+              <p>RECEITA</p>
+            </a>
+          </div>
+          <div class="imagemIntroFeed">
+            <img src="../img/posts/blackVelvet.jpg" />
+          </div>
+        </article>
+
+        <article class="conteudoFeed" aria-labelledby="label-introducao">
+          <div class="introducao feed" id="introducao">
+            <div class="perfilInPost">
+              <p>Rafael Pacheco</p>
+              <img
+                src="../img/perfil/perfilrafa.jpg"
+                alt="fotoPerfil"
+                class="ftperfilPost"
+              />
+            </div>
+            <h2 id="label-introducao">
+              VALENTINE AMARGO: Para um dia dos namorados amargo.
+            </h2>
+            <p id="texto-conteudo" class="textoConteudo">
+              Dia dos Namorados, ah, que época mágica do ano. Tudo é
+              cor-de-rosa, fofo e cheio de sentimentos melosos e "bleh". Não é
+              realmente a minha praia. Claro, vou comemorar, mas é mais um
+              momento para ficar em casa, preparar uma boa refeição.
+            </p>
+            <a class="botao" href="./perfil.html">
+              <p>RECEITA</p>
+            </a>
+          </div>
+          <div class="imagemIntroFeed">
+            <img src="../img/posts/valentine.jpg" />
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>
+        Não gostamos de canudinhos e mini guarda-chuvas em prol da causa
+        ambiental, respeitamos a historia e honramos todo suor gasto para
+        extrair somente o melhor de cada ingrediente. Liquid, sejam bem vindos.
+      </p>
+    </footer>
+    <script src="../JS/postPerfilDialog.js"></script>
+    <script src="../JS/feed.js"></script>
+  </body>
 </html>

@@ -48,12 +48,11 @@ p {
 
 .header {
   display: flex;
-  width: 95vw;
+  width: 84vw;
   justify-content: space-between;
   margin-top: 3rem;
   margin-right: 3rem;
 }
-
 
 .divLogo {
   /* width: 28%; */
@@ -65,7 +64,7 @@ p {
   max-width: 255px;
   grid-column: 1;
   justify-items: start;
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
 }
 
 .navPrimaria {
@@ -84,6 +83,18 @@ p {
 
 .headerBotao {
   cursor: pointer;
+}
+
+.headerBotaoExit {
+  width: 50px !important;
+}
+
+.exit {
+  margin-left: 100px;
+}
+
+.add {
+  height: 34px;
 }
 
 .headerBotao p {
@@ -264,7 +275,7 @@ dialog {
   background: #000;
   text-align: center;
   gap: 36px;
-  max-height: 627px;
+  max-height: 690px;
 }
 .aside a {
   color: white;
@@ -317,6 +328,12 @@ dialog {
   max-height: 30px;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+#imgEdit {
+  max-width: 25px;
+  max-height: 25px;
+  margin-left: 20px;
 }
 
 .aside li:hover {

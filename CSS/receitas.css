@@ -4,7 +4,7 @@ body {
 
 .header {
   display: flex;
-  width: 95vw;
+  width: 84vw;
   justify-content: space-between;
   margin-top: 3rem;
   margin-right: 3rem;
@@ -53,6 +53,7 @@ a {
   vertical-align: middle;
   background-color: rgba(0, 0, 0, 0.8);
   line-height: 2.5;
+  margin-top: 175px;
 }
 
 .vertical::hover .textoConteudo {
@@ -70,6 +71,11 @@ a {
   background-image: url(../img/receitas/barbados.jpg);
   width: 212px;
   height: 376px;
+}
+
+#receita:hover {
+  opacity: 0.6;
+  background-color: black;
 }
 
 .bloodyMary {

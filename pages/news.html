@@ -1,648 +1,711 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>LiquID - Amigos de alguns drinks</title>
+    <link rel="stylesheet" href="../CSS/news.css" />
+    <meta name="description" content="liquID" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/png/favicon.ico" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>LiquID - Amigos de alguns drinks</title>
-  <link rel="stylesheet" href="../CSS/news.css" />
-  <meta name="description" content="liquID" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../img/png/favicon.ico" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <div class="header">
-      <div class="divLogo">
-        <a class="aLogo" href="../index.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
-            alt="Logo" /></a>
+  <body>
+    <header>
+      <div class="header">
+        <div class="divLogo">
+          <a class="aLogo" href="../index.html"
+            ><img
+              class="logo"
+              src="../img/png/roxo_claro_transparente - Copia.png"
+              alt="Logo"
+          /></a>
+        </div>
+        <nav class="navPrimaria" aria-label="primária">
+          <ul class="headerMenu">
+            <li class="headerBotao">
+              <a class="conexoes botaoConexoes"
+                ><img src="../img/png/menuIcons/friends.png" />
+                <p>Conexões</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="receitas" href="../pages/receitas.html"
+                ><img src="../img/png/menuIcons/recipes.png" />
+                <p>Receitas</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="bar" href="../pages/meuBar.html"
+                ><img src="../img/png/menuIcons/barR.png" />
+                <p>Meu Bar</p>
+              </a>
+            </li>
+            <li class="headerBotao">
+              <a class="add" href="../pages/newPost.html"
+                ><img src="../img/png/menuIcons/add.png" />
+                <p>Publicar</p>
+              </a>
+            </li>
+            <li class="headerBotao headerBotaoExit">
+              <a class="add" href="../index.html"
+                ><img class="exit" src="../img/png/menuIcons/exit.png" />
+                <p></p>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navPrimaria" aria-label="primária">
-        <ul class="headerMenu">
-          <li class="headerBotao">
-            <a class="conexoes botaoConexoes"><img src="../img/png/menuIcons/friends.png" />
-              <p>Conexões</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="receitas" href="../pages/receitas.html"><img src="../img/png/menuIcons/recipes.png" />
-              <p>Receitas</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="bar" href="../pages/meuBar.html"><img src="../img/png/menuIcons/barR.png" />
-              <p>Meu Bar</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="add" href="../pages/newPost.html"><img src="../img/png/menuIcons/add.png" />
-              <p>Publicar</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <dialog class="conexoesPop">
-    <div class="conexoesConteudo">
-      <div class="topModal">
-        <div class="divH2">
-          <h2>Conexões</h2>
+    <dialog class="conexoesPop">
+      <div class="conexoesConteudo">
+        <div class="topModal">
+          <div class="divH2">
+            <h2>Conexões</h2>
+          </div>
+          <div class="divBotaoX"><button>X</button></div>
         </div>
-        <div class="divBotaoX"><button>X</button></div>
-      </div>
-      <div class="bottomModal">
-        <div class="conexaoBorda">
-          <img src="../img/perfil/rodrigo.jfif" alt="" />
-          <p>Rodrigo Ramos</p>
-        </div>
-        <div class="conexaoBorda">
-          <img src="../img/perfil/perfilrafa.jpg" alt="" />
-          <p>Saulo</p>
-          <p></p>
-        </div>
-
-        <div class="conexao">
-          <img src="../img/perfil/rodrigo.jfif" alt="" />
-          <p>Yaovi</p>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <dialog class="notPop">
-    <div class="notConteudo">
-      <div class="topModal">
-        <div class="divH2">
-          <h2>Notificações</h2>
-        </div>
-        <div class="divBotaoX"><button>X</button></div>
-      </div>
-      <div class="bottomModal">
-        <div class="notBorda" id="divNotificacao00">
-          <button class="btNotficiation" id="btNot00" onclick="Apaga(0)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Saulo adicionou uma nova receita!</p>
-          <p></p>
-        </div>
-
-        <div class="notBorda" id="divNotificacao01">
-          <button class="btNotficiation" id="btNot01" onclick="Apaga(1)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Rodrigo adicionou uma nova receita!</p>
-          <p></p>
-        </div>
-
-        <div class="notBorda" id="divNotificacao02">
-          <button class="btNotficiation" id="btNot02" onclick="Apaga(2)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Yaovi adicionou uma nova receita!</p>
-          <p></p>
-        </div>
-
-        <div class="notBorda" id="divNotificacao03">
-          <button class="btNotficiation" id="btNot03" onclick="Apaga(3)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
-        </div>
-        <div class="notBorda" id="divNotificacao04">
-          <button class="btNotficiation" id="btNot04" onclick="Apaga(4)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Saulo aceitou sua solicitação de conexão.</p>
-          <p></p>
-        </div>
-
-        <div class="not notBorda" id="divNotificacao05">
-          <button class="btNotficiation" id="btNot05" onclick="Apaga(5)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Yaovi aceitou sua solicitação de conexão.</p>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <main class="main" id="mainId">
-    <nav aria-label="secundária" class="aside asidePerfil">
-      <a href="../pages/perfil.html">
-        <img src="../img/perfil/perfilrafa.jpg" alt="fotoPerfil" class="ftperfil" />
-      </a>
-      <div>
-        <h2>Rafael Pacheco</h2>
-        <p>
-          Me chamo Rafael, sou de Floripa, e me divirto fazendo uns drinks.
-        </p>
-      </div>
-      <ul>
-        <a href="./index.html">
-          <li>
-            <img src="../img/png/menuIcons/menuLateral/home.svg" /> Home
-          </li>
-        </a>
-        <a class="botaoNot">
-          <li>
-            <img src="../img/png/menuIcons/menuLateral/notifications.svg" />
-            Notificações
-          </li>
-        </a>
-        <a href="./news.html">
-          <li>
-            <img src="../img/png/menuIcons/menuLateral/explore.svg" />
-            Explorar
-          </li>
-        </a>
-      </ul>
-    </nav>
-    <section class="secPai">
-      <article class="news" aria-labelledby="label-introducao">
-        <div class="conteudoNews">
-          <div class="noticias">
-            <div class="noticia">
-              <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg" />
-
-              <h3>
-                Até quando a categoria de gin vai continuar no topo de vendas
-                do mercado de bebidas?
-              </h3>
-
-              <p>
-                Apesar da forte concorrência dos outros setores emergentes
-                como rum, vodka e bourbon, a categoria gin teve um ano
-                positivo em 2022. Neste post, vamos te mostrar quais as marcas
-                estiveram no topo, comandando o crescimento da categoria.
-              </p>
-
-              <button class="button-15" role="button" id="btnUmNews">
-                Ler Mais
-              </button>
-            </div>
-            <dialog class="newOne">
-              <div class="topModal">
-                <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
-                <button class="button-15 closeModal" role="button" id="btnUmFecha">
-                  X
-                </button>
-              </div>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg" />
-
-              <h3>
-                Até quando a categoria de gin vai continuar no topo de vendas
-                do mercado de bebidas?
-              </h3>
-
-              <p>
-                Apesar da forte concorrência dos outros setores emergentes
-                como rum, vodka e bourbon, a categoria gin teve um ano
-                positivo em 2022. Neste post, vamos te mostrar quais as marcas
-                estiveram no topo, comandando o crescimento da categoria.
-              </p>
-
-              <p>
-                As vendas de gin foram atualizadas em 2022, com 105,2 milhões
-                de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
-                vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
-                para o setor de gin,, a Euromonitor International informou que
-                o volume total de gin aumentou 7,7% para 105.2 milhões de
-                caixas de nove litros em 2022.
-              </p>
-              <p>
-                O portfólio de gin da Pernod Ricard apresentou um forte
-                desempenho nos resultados financeiros do ano inteiro de 2022 ,
-                enquanto a Diageo também obteve sucesso para suas marcas de
-                gin, com o crescimento de dois dígitos de Tanqueray e Gordons
-                no último período.
-              </p>
-
-              <p>
-                Role pra baixo para descobrir os gins mais vendidos de 2022,
-                listados na ordem de suas vendas de caixas de nove litros, ou
-                ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
-                completos foram fornecidos pelo relatório da The Brand
-                Champions 2023.
-              </p>
-
-
-            </dialog>
-
-            <div class="noticia">
-              <h1>07 CURIOSIDADES SOBRE O ABSINTO</h1>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2015/08/absinto-759x500.jpg" />
-
-              <h3>
-                Saiba porque o Absinto é a bebida mais misteriosa de todos os
-                tempos
-              </h3>
-
-              <p>
-                Absinto é daquelas bebidas que quem já bebeu sabe da sua
-                potência e também do seu estrago. Se tomada com paciência e
-                respeito ao álcool é possível aproveitar das suas notas sutis
-                e tão marcantes. Com uma história centenária, por onde passou,
-                o Absinto foi protagonista e encantou gerações. Mas de fato, o
-                Absinto é uma das bebidas mais conhecidas no mundo até hoje.
-                Aqui você vai conhecer a história dessa bebida como nunca
-                antes.
-              </p>
-
-              <button class="button-15" role="button" id="btnDoisNews">
-                Ler Mais
-              </button>
-            </div>
-
-            <dialog class="newTwo">
-              <div class="topModal">
-                <h1>07 CURIOSIDADES SOBRE O ABSINTO</h1>
-                <button class="button-15 closeModal" role="button" id="btnDoisFecha">
-                  X
-                </button>
-              </div>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg" />
-
-              <h3>
-                Saiba porque o Absinto é a bebida mais misteriosa de todos os tempos
-              </h3>
-
-              <h3>07 | ORIGEM</h3>
-              <p>
-                A erva absinto (artemisia absinthium) já era usada no século XV na Grécia Antiga como medicamento. É bem
-                provável que a palavra venha do grego “apsinthion” que significa intragável.
-
-                Naquela época grandes médicos, filósofos e matemáticos recomendavam a erva embebida em vinho, mas cada
-                um utilizava a bebida para um tratamento diferente. Talvez esse seja o motivo para a bebida ficar
-                conhecida alguns séculos depois como “o remédio para todas as doenças”.
-
-                Existia também, no auge do Império Romano, uma tradição de beber uma dose de absinto antes das corridas
-                de bigas para lembrar os competidores que a vitória também tinha o seu lado amargo.
-
-                Mas somente em 1792, a bebida que conhecemos deixou de ser apenas uma receita caseira e se tornou um
-                medicamento oficial nas mãos de um grande médico francês chamado Pierre Ordinaire depois de provar uma
-                receita caseira das irmãs Henriod.
-
-                Dr. Ordinaire teria criado seu elixir com absinto, anis, hissopo, melissa, coentro e outras ervas
-                locais. A receita fez tanto sucesso que 5 anos depois um homem chamado Major Dubied comprou a receita do
-                médico. Logo começou a produzi-la em larga escala com o seu genro Henri-Louis Pernod na Suíças.
-              </p>
-
-              <h3>06 | AS CARACTERÍSTICAS DO ABSINTO</h3>
-              <p>
-                Como eu disse anteriormente, no início o elixir era amargo como um bitter. Dr. Pierre Ordinaire se
-                encarregou da mescla de ervas como erva-doce e o extrato do anis para suavizar o amargor e fazendo da
-                bebida um sucesso.
-
-                A bebida ficou muito ligada a França por se tornar popular entre os soldados franceses que conheceram a
-                bebida em missões no norte da África e trouxeram a novidade para os cafés de Paris. Ela era classificada
-                de três formas: Absinthe Suisse cuja graduação alcoólica variava de 68-72%, Demi-fine de 50-68% e
-                Ordinaire que variava entre 45-50%.
-
-                O Absinto é um destilado e não um licor como muita gente define. Ele geralmente é verde, coloração
-                obtida através da clorofila das ervas. Na Suíça são produzidas algumas variedades mais claras. Hoje em
-                dia existe cerca de 50 marcas de absinto original produzidos principalmente na França, Suíça, Espanha e
-                República Tcheca.
-              </p>
-
-
-
-              <div class="divRanking">
-                <div class="textoRaking"></div>
-                <div class="imgRanking"></div>
-              </div>
-            </dialog>
-
-            <div class="noticia">
-              <h1>OS 7 DRINQUES DO BAÚ QUE VOCÊ PRECISA PROVAR</h1>
-
-              <img class="imgNews"
-                src="https://mixologynews.com.br/wp-content/uploads/2016/01/vieux-carre-759x439.jpg" />
-
-              <h3>
-                Drinques do Baú são aqueles deliciosos, mas que foram
-                esquecidos conforme as décadas foram passando.
-              </h3>
-
-              <p>
-                Com dezenas de colaborações nos Drinques do Baú nos últimos
-                anos, separamos 7 grandes receitas que merecem ser provadas e
-                a gente tem certeza que você ainda não experimentou. Então,
-                aproveite o conteúdo e no próximo bom bar que visitar, peça um
-                desses 10 coquetéis incríveis abaixo.
-              </p>
-
-              <button class="button-15" role="button" id="btnTresNews">
-                Ler Mais
-              </button>
-            </div>
-
-            <dialog class="newThree">
-              <div class="topModal">
-                <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
-                <button class="button-15 closeModal" role="button" id="btnTresFecha">
-                  Fechar
-                </button>
-              </div>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg" />
-
-              <h3>
-                Até quando a categoria de gin vai continuar no topo de vendas
-                do mercado de bebidas?
-              </h3>
-
-              <p>
-                Apesar da forte concorrência dos outros setores emergentes
-                como rum, vodka e bourbon, a categoria gin teve um ano
-                positivo em 2022. Neste post, vamos te mostrar quais as marcas
-                estiveram no topo, comandando o crescimento da categoria.
-              </p>
-
-              <p>
-                As vendas de gin foram atualizadas em 2022, com 105,2 milhões
-                de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
-                vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
-                para o setor de gin,, a Euromonitor International informou que
-                o volume total de gin aumentou 7,7% para 105.2 milhões de
-                caixas de nove litros em 2022.
-              </p>
-              <p>
-                O portfólio de gin da Pernod Ricard apresentou um forte
-                desempenho nos resultados financeiros do ano inteiro de 2022 ,
-                enquanto a Diageo também obteve sucesso para suas marcas de
-                gin, com o crescimento de dois dígitos de Tanqueray e Gordons
-                no último período.
-              </p>
-
-              <p>
-                Role pra baixo para descobrir os gins mais vendidos de 2022,
-                listados na ordem de suas vendas de caixas de nove litros, ou
-                ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
-                completos foram fornecidos pelo relatório da The Brand
-                Champions 2023.
-              </p>
-
-              <div class="divRanking">
-                <div class="textoRaking"></div>
-                <div class="imgRanking"></div>
-              </div>
-            </dialog>
-
-            <div class="noticia">
-              <h1>07 CURIOSIDADES SOBRE O WHISKY</h1>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2011/12/whisky-759x500.jpg" />
-
-              <h3>
-                Whisky e seus tantos segredos desvendados aqui no Mixology
-                News
-              </h3>
-
-              <p>
-                Poucas pessoas sabem que o Brasil é considerado um dos maiores
-                consumidores de whisky do mundo. Mas será que os brasileiros
-                só consomem ou entendem de whisky também?! Aqui vão algumas
-                curiosidades e erros comuns que todo profissional de bar e
-                amantes da bebida deveriam saber!
-              </p>
-
-              <button class="button-15" role="button" id="btnQuatroNews">
-                Ler Mais
-              </button>
-            </div>
-
-            <dialog class="newFour">
-              <div class="topModal">
-                <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
-                <button class="button-15 closeModal" role="button" id="btnQuatroFecha">
-                  Fechar
-                </button>
-              </div>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg" />
-
-              <h3>
-                Até quando a categoria de gin vai continuar no topo de vendas
-                do mercado de bebidas?
-              </h3>
-
-              <p>
-                Apesar da forte concorrência dos outros setores emergentes
-                como rum, vodka e bourbon, a categoria gin teve um ano
-                positivo em 2022. Neste post, vamos te mostrar quais as marcas
-                estiveram no topo, comandando o crescimento da categoria.
-              </p>
-
-              <p>
-                As vendas de gin foram atualizadas em 2022, com 105,2 milhões
-                de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
-                vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
-                para o setor de gin,, a Euromonitor International informou que
-                o volume total de gin aumentou 7,7% para 105.2 milhões de
-                caixas de nove litros em 2022.
-              </p>
-              <p>
-                O portfólio de gin da Pernod Ricard apresentou um forte
-                desempenho nos resultados financeiros do ano inteiro de 2022 ,
-                enquanto a Diageo também obteve sucesso para suas marcas de
-                gin, com o crescimento de dois dígitos de Tanqueray e Gordons
-                no último período.
-              </p>
-
-              <p>
-                Role pra baixo para descobrir os gins mais vendidos de 2022,
-                listados na ordem de suas vendas de caixas de nove litros, ou
-                ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
-                completos foram fornecidos pelo relatório da The Brand
-                Champions 2023.
-              </p>
-
-              <div class="divRanking">
-                <div class="textoRaking"></div>
-                <div class="imgRanking"></div>
-              </div>
-            </dialog>
-
-            <div class="noticia">
-              <h1>QUENTÃO: APRENDA A RECEITA DO INVERNO BRASILEIRO</h1>
-
-              <img class="imgNews"
-                src="https://mixologynews.com.br/wp-content/uploads/2020/06/quent%C3%A3o-759x500.jpg" />
-
-              <h3>
-                Aprenda a preparar na sua casa o Quentão, a bebida
-                indispensável para esse mês de junho
-              </h3>
-
-              <p>
-                Festa Junina é uma das mais saborosas demonstrações de cultura
-                do nosso país, uma oportunidade para frequentar as quermesses
-                com seus instrumentos culturais, sociais e gastronômicos
-                típico do nosso inverno, mas você também pode preparar os
-                comes e bebes para comemorar esse período tão agradável do
-                ano.
-              </p>
-
-              <button class="button-15" role="button" id="btnCincoNews">
-                Ler Mais
-              </button>
-            </div>
-
-            <dialog class="newFive">
-              <div class="topModal">
-                <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
-                <button class="button-15 closeModal" role="button" id="btnCincoFecha">
-                  Fechar
-                </button>
-              </div>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg" />
-
-              <h3>
-                Até quando a categoria de gin vai continuar no topo de vendas
-                do mercado de bebidas?
-              </h3>
-
-              <p>
-                Apesar da forte concorrência dos outros setores emergentes
-                como rum, vodka e bourbon, a categoria gin teve um ano
-                positivo em 2022. Neste post, vamos te mostrar quais as marcas
-                estiveram no topo, comandando o crescimento da categoria.
-              </p>
-
-              <p>
-                As vendas de gin foram atualizadas em 2022, com 105,2 milhões
-                de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
-                vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
-                para o setor de gin,, a Euromonitor International informou que
-                o volume total de gin aumentou 7,7% para 105.2 milhões de
-                caixas de nove litros em 2022.
-              </p>
-              <p>
-                O portfólio de gin da Pernod Ricard apresentou um forte
-                desempenho nos resultados financeiros do ano inteiro de 2022 ,
-                enquanto a Diageo também obteve sucesso para suas marcas de
-                gin, com o crescimento de dois dígitos de Tanqueray e Gordons
-                no último período.
-              </p>
-
-              <p>
-                Role pra baixo para descobrir os gins mais vendidos de 2022,
-                listados na ordem de suas vendas de caixas de nove litros, ou
-                ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
-                completos foram fornecidos pelo relatório da The Brand
-                Champions 2023.
-              </p>
-
-              <div class="divRanking">
-                <div class="textoRaking"></div>
-                <div class="imgRanking"></div>
-              </div>
-            </dialog>
-
-            <div class="noticia">
-              <h1>AS DORES DE SER BARTENDER E AS MUITAS LESÕES NO BAR</h1>
-
-              <img class="imgNews" src="https://www.rbsdirect.com.br/imagesrc/35808612.jpg?w=700" />
-
-              <h3>
-                Cada vez mais comum, a má postura corporal no ambiente de
-                trabalho faz com que muitos bartenders se machuquem cada vez
-                mais no dia a dia.
-              </h3>
-
-              <p>
-                Quem não conhece algum bartender que precisou se afastar por
-                alguns dias, as vezes semanas, por conta de um problema de
-                saúde que foi gerado exatamente no ofício de bartender? Uma
-                característica da geração de bartenders de hoje em dia, é ter
-                escolhido trabalhar por mais anos dentro do bar ao invés de
-                mudar de profissão ou migrar de área. E com isso, os (maus)
-                hábitos do dia a dia geram reflexos nos nossos corpos.
-              </p>
-
-              <button class="button-15" role="button" id="btnSeisNews">
-                Ler Mais
-              </button>
-            </div>
-
-            <dialog class="newSix">
-              <div class="topModal">
-                <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
-                <button class="button-15 closeModal" role="button" id="btnSeisFecha">
-                  Fechar
-                </button>
-              </div>
-
-              <img class="imgNews" src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg" />
-
-              <h3>
-                Até quando a categoria de gin vai continuar no topo de vendas
-                do mercado de bebidas?
-              </h3>
-
-              <p>
-                Apesar da forte concorrência dos outros setores emergentes
-                como rum, vodka e bourbon, a categoria gin teve um ano
-                positivo em 2022. Neste post, vamos te mostrar quais as marcas
-                estiveram no topo, comandando o crescimento da categoria.
-              </p>
-
-              <p>
-                As vendas de gin foram atualizadas em 2022, com 105,2 milhões
-                de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
-                vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
-                para o setor de gin,, a Euromonitor International informou que
-                o volume total de gin aumentou 7,7% para 105.2 milhões de
-                caixas de nove litros em 2022.
-              </p>
-              <p>
-                O portfólio de gin da Pernod Ricard apresentou um forte
-                desempenho nos resultados financeiros do ano inteiro de 2022 ,
-                enquanto a Diageo também obteve sucesso para suas marcas de
-                gin, com o crescimento de dois dígitos de Tanqueray e Gordons
-                no último período.
-              </p>
-
-              <p>
-                Role pra baixo para descobrir os gins mais vendidos de 2022,
-                listados na ordem de suas vendas de caixas de nove litros, ou
-                ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
-                completos foram fornecidos pelo relatório da The Brand
-                Champions 2023.
-              </p>
-
-              <div class="divRanking">
-                <div class="textoRaking"></div>
-                <div class="imgRanking"></div>
-              </div>
-            </dialog>
+        <div class="bottomModal">
+          <div class="conexaoBorda">
+            <img src="../img/perfil/rodrigo.jfif" alt="" />
+            <p>Rodrigo Ramos</p>
+          </div>
+          <div class="conexaoBorda">
+            <img src="../img/perfil/perfilrafa.jpg" alt="" />
+            <p>Saulo</p>
+            <p></p>
+          </div>
+
+          <div class="conexao">
+            <img src="../img/perfil/rodrigo.jfif" alt="" />
+            <p>Yaovi</p>
           </div>
         </div>
-      </article>
-    </section>
-  </main>
+      </div>
+    </dialog>
 
-  <footer class="rodape">
-    <p>
-      Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
-      historia e honramos todo suor gasto para extrair somente o melhor de
-      cada ingrediente. Liquid, sejam bem vindos.
-    </p>
-  </footer>
+    <dialog class="notPop">
+      <div class="notConteudo">
+        <div class="topModal">
+          <div class="divH2">
+            <h2>Notificações</h2>
+          </div>
+          <div class="divBotaoX"><button>X</button></div>
+        </div>
+        <div class="bottomModal">
+          <div class="notBorda" id="divNotificacao00">
+            <button class="btNotficiation" id="btNot00" onclick="Apaga(0)">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Saulo adicionou uma nova receita!</p>
+            <p></p>
+          </div>
 
-  <script src="../JS/postPerfilDialog.js"></script>
-  <script src="../JS/news.js"></script>
-</body>
+          <div class="notBorda" id="divNotificacao01">
+            <button class="btNotficiation" id="btNot01" onclick="Apaga(1)">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Rodrigo adicionou uma nova receita!</p>
+            <p></p>
+          </div>
 
+          <div class="notBorda" id="divNotificacao02">
+            <button class="btNotficiation" id="btNot02" onclick="Apaga(2)">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Yaovi adicionou uma nova receita!</p>
+            <p></p>
+          </div>
+
+          <div class="notBorda" id="divNotificacao03">
+            <button class="btNotficiation" id="btNot03" onclick="Apaga(3)">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
+          </div>
+          <div class="notBorda" id="divNotificacao04">
+            <button class="btNotficiation" id="btNot04" onclick="Apaga(4)">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Saulo aceitou sua solicitação de conexão.</p>
+            <p></p>
+          </div>
+
+          <div class="not notBorda" id="divNotificacao05">
+            <button class="btNotficiation" id="btNot05" onclick="Apaga(5)">
+              <img
+                class="check"
+                src="../img/perfil/check-circle-svgrepo-com.svg"
+              />
+            </button>
+            <p>Yaovi aceitou sua solicitação de conexão.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <main class="main" id="mainId">
+      <section class="secPai">
+        <article class="news" aria-labelledby="label-introducao">
+          <div class="conteudoNews">
+            <div class="noticias">
+              <div class="noticia">
+                <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg"
+                />
+
+                <h3>
+                  Até quando a categoria de gin vai continuar no topo de vendas
+                  do mercado de bebidas?
+                </h3>
+
+                <p>
+                  Apesar da forte concorrência dos outros setores emergentes
+                  como rum, vodka e bourbon, a categoria gin teve um ano
+                  positivo em 2022. Neste post, vamos te mostrar quais as marcas
+                  estiveram no topo, comandando o crescimento da categoria.
+                </p>
+
+                <button class="button-15" role="button" id="btnUmNews">
+                  Ler Mais
+                </button>
+              </div>
+              <dialog class="newOne">
+                <div class="topModal">
+                  <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
+                  <button
+                    class="button-15 closeModal"
+                    role="button"
+                    id="btnUmFecha"
+                  >
+                    X
+                  </button>
+                </div>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg"
+                />
+
+                <h3>
+                  Até quando a categoria de gin vai continuar no topo de vendas
+                  do mercado de bebidas?
+                </h3>
+
+                <p>
+                  Apesar da forte concorrência dos outros setores emergentes
+                  como rum, vodka e bourbon, a categoria gin teve um ano
+                  positivo em 2022. Neste post, vamos te mostrar quais as marcas
+                  estiveram no topo, comandando o crescimento da categoria.
+                </p>
+
+                <p>
+                  As vendas de gin foram atualizadas em 2022, com 105,2 milhões
+                  de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
+                  vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
+                  para o setor de gin,, a Euromonitor International informou que
+                  o volume total de gin aumentou 7,7% para 105.2 milhões de
+                  caixas de nove litros em 2022.
+                </p>
+                <p>
+                  O portfólio de gin da Pernod Ricard apresentou um forte
+                  desempenho nos resultados financeiros do ano inteiro de 2022 ,
+                  enquanto a Diageo também obteve sucesso para suas marcas de
+                  gin, com o crescimento de dois dígitos de Tanqueray e Gordons
+                  no último período.
+                </p>
+
+                <p>
+                  Role pra baixo para descobrir os gins mais vendidos de 2022,
+                  listados na ordem de suas vendas de caixas de nove litros, ou
+                  ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
+                  completos foram fornecidos pelo relatório da The Brand
+                  Champions 2023.
+                </p>
+              </dialog>
+
+              <div class="noticia">
+                <h1>07 CURIOSIDADES SOBRE O ABSINTO</h1>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2015/08/absinto-759x500.jpg"
+                />
+
+                <h3>
+                  Saiba porque o Absinto é a bebida mais misteriosa de todos os
+                  tempos
+                </h3>
+
+                <p>
+                  Absinto é daquelas bebidas que quem já bebeu sabe da sua
+                  potência e também do seu estrago. Se tomada com paciência e
+                  respeito ao álcool é possível aproveitar das suas notas sutis
+                  e tão marcantes. Com uma história centenária, por onde passou,
+                  o Absinto foi protagonista e encantou gerações. Mas de fato, o
+                  Absinto é uma das bebidas mais conhecidas no mundo até hoje.
+                  Aqui você vai conhecer a história dessa bebida como nunca
+                  antes.
+                </p>
+
+                <button class="button-15" role="button" id="btnDoisNews">
+                  Ler Mais
+                </button>
+              </div>
+
+              <dialog class="newTwo">
+                <div class="topModal">
+                  <h1>07 CURIOSIDADES SOBRE O ABSINTO</h1>
+                  <button
+                    class="button-15 closeModal"
+                    role="button"
+                    id="btnDoisFecha"
+                  >
+                    X
+                  </button>
+                </div>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2015/08/absinto-759x500.jpg"
+                />
+
+                <h3>
+                  Saiba porque o Absinto é a bebida mais misteriosa de todos os
+                  tempos
+                </h3>
+
+                <h3>07 | ORIGEM</h3>
+                <p>
+                  A erva absinto (artemisia absinthium) já era usada no século
+                  XV na Grécia Antiga como medicamento. É bem provável que a
+                  palavra venha do grego “apsinthion” que significa intragável.
+                  Naquela época grandes médicos, filósofos e matemáticos
+                  recomendavam a erva embebida em vinho, mas cada um utilizava a
+                  bebida para um tratamento diferente. Talvez esse seja o motivo
+                  para a bebida ficar conhecida alguns séculos depois como “o
+                  remédio para todas as doenças”. Existia também, no auge do
+                  Império Romano, uma tradição de beber uma dose de absinto
+                  antes das corridas de bigas para lembrar os competidores que a
+                  vitória também tinha o seu lado amargo. Mas somente em 1792, a
+                  bebida que conhecemos deixou de ser apenas uma receita caseira
+                  e se tornou um medicamento oficial nas mãos de um grande
+                  médico francês chamado Pierre Ordinaire depois de provar uma
+                  receita caseira das irmãs Henriod. Dr. Ordinaire teria criado
+                  seu elixir com absinto, anis, hissopo, melissa, coentro e
+                  outras ervas locais. A receita fez tanto sucesso que 5 anos
+                  depois um homem chamado Major Dubied comprou a receita do
+                  médico. Logo começou a produzi-la em larga escala com o seu
+                  genro Henri-Louis Pernod na Suíças.
+                </p>
+
+                <h3>06 | AS CARACTERÍSTICAS DO ABSINTO</h3>
+                <p>
+                  Como eu disse anteriormente, no início o elixir era amargo
+                  como um bitter. Dr. Pierre Ordinaire se encarregou da mescla
+                  de ervas como erva-doce e o extrato do anis para suavizar o
+                  amargor e fazendo da bebida um sucesso. A bebida ficou muito
+                  ligada a França por se tornar popular entre os soldados
+                  franceses que conheceram a bebida em missões no norte da
+                  África e trouxeram a novidade para os cafés de Paris. Ela era
+                  classificada de três formas: Absinthe Suisse cuja graduação
+                  alcoólica variava de 68-72%, Demi-fine de 50-68% e Ordinaire
+                  que variava entre 45-50%. O Absinto é um destilado e não um
+                  licor como muita gente define. Ele geralmente é verde,
+                  coloração obtida através da clorofila das ervas. Na Suíça são
+                  produzidas algumas variedades mais claras. Hoje em dia existe
+                  cerca de 50 marcas de absinto original produzidos
+                  principalmente na França, Suíça, Espanha e República Tcheca.
+                </p>
+
+                <div class="divRanking">
+                  <div class="textoRaking"></div>
+                  <div class="imgRanking"></div>
+                </div>
+              </dialog>
+
+              <div class="noticia">
+                <h1>OS 7 DRINQUES DO BAÚ QUE VOCÊ PRECISA PROVAR</h1>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2016/01/vieux-carre-759x439.jpg"
+                />
+
+                <h3>
+                  Drinques do Baú são aqueles deliciosos, mas que foram
+                  esquecidos conforme as décadas foram passando.
+                </h3>
+
+                <p>
+                  Com dezenas de colaborações nos Drinques do Baú nos últimos
+                  anos, separamos 7 grandes receitas que merecem ser provadas e
+                  a gente tem certeza que você ainda não experimentou. Então,
+                  aproveite o conteúdo e no próximo bom bar que visitar, peça um
+                  desses 10 coquetéis incríveis abaixo.
+                </p>
+
+                <button class="button-15" role="button" id="btnTresNews">
+                  Ler Mais
+                </button>
+              </div>
+
+              <dialog class="newThree">
+                <div class="topModal">
+                  <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
+                  <button
+                    class="button-15 closeModal"
+                    role="button"
+                    id="btnTresFecha"
+                  >
+                    Fechar
+                  </button>
+                </div>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg"
+                />
+
+                <h3>
+                  Até quando a categoria de gin vai continuar no topo de vendas
+                  do mercado de bebidas?
+                </h3>
+
+                <p>
+                  Apesar da forte concorrência dos outros setores emergentes
+                  como rum, vodka e bourbon, a categoria gin teve um ano
+                  positivo em 2022. Neste post, vamos te mostrar quais as marcas
+                  estiveram no topo, comandando o crescimento da categoria.
+                </p>
+
+                <p>
+                  As vendas de gin foram atualizadas em 2022, com 105,2 milhões
+                  de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
+                  vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
+                  para o setor de gin,, a Euromonitor International informou que
+                  o volume total de gin aumentou 7,7% para 105.2 milhões de
+                  caixas de nove litros em 2022.
+                </p>
+                <p>
+                  O portfólio de gin da Pernod Ricard apresentou um forte
+                  desempenho nos resultados financeiros do ano inteiro de 2022 ,
+                  enquanto a Diageo também obteve sucesso para suas marcas de
+                  gin, com o crescimento de dois dígitos de Tanqueray e Gordons
+                  no último período.
+                </p>
+
+                <p>
+                  Role pra baixo para descobrir os gins mais vendidos de 2022,
+                  listados na ordem de suas vendas de caixas de nove litros, ou
+                  ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
+                  completos foram fornecidos pelo relatório da The Brand
+                  Champions 2023.
+                </p>
+
+                <div class="divRanking">
+                  <div class="textoRaking"></div>
+                  <div class="imgRanking"></div>
+                </div>
+              </dialog>
+
+              <div class="noticia">
+                <h1>07 CURIOSIDADES SOBRE O WHISKY</h1>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2011/12/whisky-759x500.jpg"
+                />
+
+                <h3>
+                  Whisky e seus tantos segredos desvendados aqui no Mixology
+                  News
+                </h3>
+
+                <p>
+                  Poucas pessoas sabem que o Brasil é considerado um dos maiores
+                  consumidores de whisky do mundo. Mas será que os brasileiros
+                  só consomem ou entendem de whisky também?! Aqui vão algumas
+                  curiosidades e erros comuns que todo profissional de bar e
+                  amantes da bebida deveriam saber!
+                </p>
+
+                <button class="button-15" role="button" id="btnQuatroNews">
+                  Ler Mais
+                </button>
+              </div>
+
+              <dialog class="newFour">
+                <div class="topModal">
+                  <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
+                  <button
+                    class="button-15 closeModal"
+                    role="button"
+                    id="btnQuatroFecha"
+                  >
+                    Fechar
+                  </button>
+                </div>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg"
+                />
+
+                <h3>
+                  Até quando a categoria de gin vai continuar no topo de vendas
+                  do mercado de bebidas?
+                </h3>
+
+                <p>
+                  Apesar da forte concorrência dos outros setores emergentes
+                  como rum, vodka e bourbon, a categoria gin teve um ano
+                  positivo em 2022. Neste post, vamos te mostrar quais as marcas
+                  estiveram no topo, comandando o crescimento da categoria.
+                </p>
+
+                <p>
+                  As vendas de gin foram atualizadas em 2022, com 105,2 milhões
+                  de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
+                  vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
+                  para o setor de gin,, a Euromonitor International informou que
+                  o volume total de gin aumentou 7,7% para 105.2 milhões de
+                  caixas de nove litros em 2022.
+                </p>
+                <p>
+                  O portfólio de gin da Pernod Ricard apresentou um forte
+                  desempenho nos resultados financeiros do ano inteiro de 2022 ,
+                  enquanto a Diageo também obteve sucesso para suas marcas de
+                  gin, com o crescimento de dois dígitos de Tanqueray e Gordons
+                  no último período.
+                </p>
+
+                <p>
+                  Role pra baixo para descobrir os gins mais vendidos de 2022,
+                  listados na ordem de suas vendas de caixas de nove litros, ou
+                  ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
+                  completos foram fornecidos pelo relatório da The Brand
+                  Champions 2023.
+                </p>
+
+                <div class="divRanking">
+                  <div class="textoRaking"></div>
+                  <div class="imgRanking"></div>
+                </div>
+              </dialog>
+
+              <div class="noticia">
+                <h1>QUENTÃO: APRENDA A RECEITA DO INVERNO BRASILEIRO</h1>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2020/06/quent%C3%A3o-759x500.jpg"
+                />
+
+                <h3>
+                  Aprenda a preparar na sua casa o Quentão, a bebida
+                  indispensável para esse mês de junho
+                </h3>
+
+                <p>
+                  Festa Junina é uma das mais saborosas demonstrações de cultura
+                  do nosso país, uma oportunidade para frequentar as quermesses
+                  com seus instrumentos culturais, sociais e gastronômicos
+                  típico do nosso inverno, mas você também pode preparar os
+                  comes e bebes para comemorar esse período tão agradável do
+                  ano.
+                </p>
+
+                <button class="button-15" role="button" id="btnCincoNews">
+                  Ler Mais
+                </button>
+              </div>
+
+              <dialog class="newFive">
+                <div class="topModal">
+                  <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
+                  <button
+                    class="button-15 closeModal"
+                    role="button"
+                    id="btnCincoFecha"
+                  >
+                    Fechar
+                  </button>
+                </div>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg"
+                />
+
+                <h3>
+                  Até quando a categoria de gin vai continuar no topo de vendas
+                  do mercado de bebidas?
+                </h3>
+
+                <p>
+                  Apesar da forte concorrência dos outros setores emergentes
+                  como rum, vodka e bourbon, a categoria gin teve um ano
+                  positivo em 2022. Neste post, vamos te mostrar quais as marcas
+                  estiveram no topo, comandando o crescimento da categoria.
+                </p>
+
+                <p>
+                  As vendas de gin foram atualizadas em 2022, com 105,2 milhões
+                  de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
+                  vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
+                  para o setor de gin,, a Euromonitor International informou que
+                  o volume total de gin aumentou 7,7% para 105.2 milhões de
+                  caixas de nove litros em 2022.
+                </p>
+                <p>
+                  O portfólio de gin da Pernod Ricard apresentou um forte
+                  desempenho nos resultados financeiros do ano inteiro de 2022 ,
+                  enquanto a Diageo também obteve sucesso para suas marcas de
+                  gin, com o crescimento de dois dígitos de Tanqueray e Gordons
+                  no último período.
+                </p>
+
+                <p>
+                  Role pra baixo para descobrir os gins mais vendidos de 2022,
+                  listados na ordem de suas vendas de caixas de nove litros, ou
+                  ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
+                  completos foram fornecidos pelo relatório da The Brand
+                  Champions 2023.
+                </p>
+
+                <div class="divRanking">
+                  <div class="textoRaking"></div>
+                  <div class="imgRanking"></div>
+                </div>
+              </dialog>
+
+              <div class="noticia">
+                <h1>AS DORES DE SER BARTENDER E AS MUITAS LESÕES NO BAR</h1>
+
+                <img
+                  class="imgNews"
+                  src="https://www.rbsdirect.com.br/imagesrc/35808612.jpg?w=700"
+                />
+
+                <h3>
+                  Cada vez mais comum, a má postura corporal no ambiente de
+                  trabalho faz com que muitos bartenders se machuquem cada vez
+                  mais no dia a dia.
+                </h3>
+
+                <p>
+                  Quem não conhece algum bartender que precisou se afastar por
+                  alguns dias, as vezes semanas, por conta de um problema de
+                  saúde que foi gerado exatamente no ofício de bartender? Uma
+                  característica da geração de bartenders de hoje em dia, é ter
+                  escolhido trabalhar por mais anos dentro do bar ao invés de
+                  mudar de profissão ou migrar de área. E com isso, os (maus)
+                  hábitos do dia a dia geram reflexos nos nossos corpos.
+                </p>
+
+                <button class="button-15" role="button" id="btnSeisNews">
+                  Ler Mais
+                </button>
+              </div>
+
+              <dialog class="newSix">
+                <div class="topModal">
+                  <h1>AS MARCAS DE GIN MAIS VENDIDAS EM 2022</h1>
+                  <button
+                    class="button-15 closeModal"
+                    role="button"
+                    id="btnSeisFecha"
+                  >
+                    Fechar
+                  </button>
+                </div>
+
+                <img
+                  class="imgNews"
+                  src="https://mixologynews.com.br/wp-content/uploads/2023/07/gin-759x500.jpg"
+                />
+
+                <h3>
+                  Até quando a categoria de gin vai continuar no topo de vendas
+                  do mercado de bebidas?
+                </h3>
+
+                <p>
+                  Apesar da forte concorrência dos outros setores emergentes
+                  como rum, vodka e bourbon, a categoria gin teve um ano
+                  positivo em 2022. Neste post, vamos te mostrar quais as marcas
+                  estiveram no topo, comandando o crescimento da categoria.
+                </p>
+
+                <p>
+                  As vendas de gin foram atualizadas em 2022, com 105,2 milhões
+                  de caixas de nove litros (ou caixa com 12 grfs de 750 ml cada)
+                  vendidos ao longo do ano. Enquanto 2021 foi um ano turbulento
+                  para o setor de gin,, a Euromonitor International informou que
+                  o volume total de gin aumentou 7,7% para 105.2 milhões de
+                  caixas de nove litros em 2022.
+                </p>
+                <p>
+                  O portfólio de gin da Pernod Ricard apresentou um forte
+                  desempenho nos resultados financeiros do ano inteiro de 2022 ,
+                  enquanto a Diageo também obteve sucesso para suas marcas de
+                  gin, com o crescimento de dois dígitos de Tanqueray e Gordons
+                  no último período.
+                </p>
+
+                <p>
+                  Role pra baixo para descobrir os gins mais vendidos de 2022,
+                  listados na ordem de suas vendas de caixas de nove litros, ou
+                  ainda, caixa ccom 12 garrafas de 750 ml cada. Os dados
+                  completos foram fornecidos pelo relatório da The Brand
+                  Champions 2023.
+                </p>
+
+                <div class="divRanking">
+                  <div class="textoRaking"></div>
+                  <div class="imgRanking"></div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>
+        Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
+        historia e honramos todo suor gasto para extrair somente o melhor de
+        cada ingrediente. Liquid, sejam bem vindos.
+      </p>
+    </footer>
+
+    <script src="../JS/postPerfilDialog.js"></script>
+    <script src="../JS/news.js"></script>
+  </body>
 </html>

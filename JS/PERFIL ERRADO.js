@@ -26,7 +26,6 @@ let posts = [
   {
     nome: 'SUPERB COQUETEL: Um enganoso drink de cerveja amanteigada.',
     foto: '../img/posts/superb.jpg',
-    fotoAutor: '../img/perfil/perfilrafa.jpg',
     ingredientes: [
       '1 colher de sopa de geleia de goiaba',
       '1 colher de sopa de açúcar',
@@ -44,45 +43,8 @@ let posts = [
   },
 
   {
-    nome: 'COQUETEL ACHOCOLATADO COM AMENDOAS',
-    foto: '../img/posts/chocolate.jpg',
-    fotoAutor: '../img/perfil/rodrigo.jfif',
-    ingredientes: [
-      '60 ml de bourbon infusionado com pecan',
-      '10 ml de xarope de maple',
-      '22 ml de crème de cacao amargo',
-      'Bitters de chocolate',
-    ],
-    texto:
-      'Curiosidade sobre mim, eu amo chocolate. Eu adoro em todas as formas. Quando posso tê-lo em forma de coquetel, fico muito feliz. Há até um boato (ou lenda) de que toda vez que vou à Vegas (algo que tento fazer pelo menos uma vez por ano), gosto de começar todos os dias com um Chocolate Martini. E o que dizer do fim da noite? E quando é hora de  com algo da família do bourbon? Temos o Coquetel de Chocolate, Xarope de Ácer e amendoas para isso!',
-    receita:
-      'Faça seu bourbon infusionado com pecan. Adicione o bourbon, o xarope, o crème de cacao amargo e os bitters em um shaker com gelo. Agite. Despeje o conteúdo do shaker em um  old fashioned com um grande pedaço de gelo. Decore com uma fatia de pecan. Despeje uma parte da stout suavemente por cima.',
-    autor: 'RODRIGO',
-  },
-
-  {
-    nome: 'LUCID FLY: Um enganoso drink de cerveja amanteigada.',
-    foto: '../img/posts/lucidFly.jpg',
-    fotoAutor: '../img/perfil/fotoPerfilSaulo.jpg',
-    ingredientes: [
-      '30 ml de bourbon',
-      '30 ml de Cherry Herring',
-      '60 ml de Tang',
-      '1/4 colher de chá de absinto',
-      'Uma pitada de Cherry Bitters',
-      'Rodelas de laranja',
-    ],
-    texto:
-      'Uma antiga amiga minha, me disse que ela e um amigo tinham uma banda e que eles eram bons, eu sabia que eles seriam bons. Essa foi minha introdução ao Lucid Fly e (tambores) eles finalmente estão lançando seu primeiro álbum de estúdio! Doug pediu se poderíamos criar um coquetel para o álbum deles, e quem sou eu para dizer não? Apresentando o coquetel Lucid Fly!',
-    receita:
-      'Coloque todos os ingredientes no copo Old Fashioned. Adicione cubos de gelo e mexa bem. Decore com rodelas de laranja e sirva.',
-    autor: 'SAULO',
-  },
-
-  {
     nome: 'VALENTINE AMARGO: Para um dia dos namorados amargo.',
     foto: '../img/posts/valentine.jpg',
-    fotoAutor: '../img/perfil/perfilrafa.jpg',
     ingredientes: [
       '45 ml de vodka',
       '90 ml de suco de tomate',
@@ -99,38 +61,6 @@ let posts = [
     receita:
       'Coloque todas as bebidas alcoólicas e o suco de limão em uma coqueteleira. Adicione gelo. Agite. Despeje e coe em seu copo. Adicione uma etapa de coagem para evitar pedaços de gelo. A menos que você prefira, nesse caso, não coe. Decore com um morango. Agora, fique amargo. Ou seja feliz. De qualquer maneira, é um coquetel excelente.',
     autor: 'RAFAEL',
-  },
-
-  {
-    nome: 'HORCHATA',
-    foto: '../img/posts/horchata.jpg',
-    fotoAutor: '../img/perfil/rodrigo.jfif',
-    ingredientes: [
-      '120 ml de leite de amêndoas',
-      '15 ml de licor de amêndoas',
-      '15 ml de xarope simples de canela',
-      '60 ml de tequila añejo',
-    ],
-    texto:
-      'Se você não conhece horchata, é um elixir mágico de sabor - pense nela como um pudim de arroz, mas em forma de bebida e mais leve. É refrescante. Sabendo disso, era apenas  questão de tempo para eu enfrentar essa bebida mais incrível em forma de álcool, vamos começar com o Horchata!',
-    receita:
-      'Adicione todos os ingredientes em um shaker com gelo. Adivinha? Agite. Encha o copo com gelo. Coe sua horchata azedada no copo. Decore com um pouco de canela.',
-    autor: 'RODRIGO',
-  },
-
-  {
-    nome: 'BLACK VELVET',
-    foto: '../img/posts/blackVelvet.jpg',
-    fotoAutor: '../img/perfil/fotoPerfilSaulo.jpg',
-    ingredientes: [
-      '1 parte de stout (realmente, Guinness)',
-      '1 parte de cidra (seca)',
-    ],
-    texto:
-      'Ah, St. Patrick day - sempre fui fã. Desde a comida até a música e a desculpa para usar verde, tudo é mágico. Caramba, isso foi antes mesmo de eu perceber que era um ótimo dia para tomar uma caneca (ou três) de cerveja. No entanto, às vezes você quer mais do que apenas uma caneca solitária, talvez até algo que não seja verde. Para esses momentos, aproveite um Black Velvet!',
-    receita:
-      'Abra sua cidra. Abra sua stout. Despeje uma parte da cidra em seu copo pilsner. Pegue uma colher e coloque-a logo acima da cidra. Despeje uma parte da stout suavemente por cima.',
-    autor: 'SAULO',
   },
 ];
 
@@ -220,11 +150,7 @@ function criaPost(newPosts) {
     let textoAutor = document.createTextNode(newPosts[i].autor);
     autor.appendChild(textoAutor);
     infoPerfil.appendChild(autor);
-
-    let fotoAutor = document.createElement('img');
-    fotoAutor.setAttribute('src', newPosts[i].fotoAutor);
-    fotoAutor.setAttribute('class', 'ftperfilPost');
-    infoPerfil.appendChild(fotoAutor);
+    debugger;
 
     let tituloPost = document.createElement('h2');
     tituloPost.setAttribute('id', 'label-introducao');
@@ -264,17 +190,14 @@ function criaPost(newPosts) {
     receita.appendChild(textoReceitaDrink);
     divNewPost.appendChild(receita);
 
-    let userLogged = JSON.parse(localStorage.getItem('userLogado'));
-    if (userLogged.nome === newPosts[i].autor) {
-      let btnNewPost = document.createElement('a');
-      btnNewPost.setAttribute('class', 'botao');
-      btnNewPost.setAttribute('onClick', `edit(${i})`);
-      let textoBtn = document.createElement('p');
-      let conteudoTextoBtn = document.createTextNode('Editar');
-      textoBtn.appendChild(conteudoTextoBtn);
-      btnNewPost.appendChild(textoBtn);
-      divNewPost.appendChild(btnNewPost);
-    }
+    let btnNewPost = document.createElement('a');
+    btnNewPost.setAttribute('class', 'botao');
+    btnNewPost.setAttribute('onClick', `edit(${i})`);
+    let textoBtn = document.createElement('p');
+    let conteudoTextoBtn = document.createTextNode('Editar');
+    textoBtn.appendChild(conteudoTextoBtn);
+    btnNewPost.appendChild(textoBtn);
+    divNewPost.appendChild(btnNewPost);
 
     let divNewPic = document.createElement('div');
     divNewPic.setAttribute('class', 'imagemIntro');

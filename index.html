@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./CSS/landingPage2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiquID - Amigos de bons drinks</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./CSS/landingPage2.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LiquID - Amigos de bons drinks</title>
-</head>
-
-<body>
-  <div class="containerTop">
-    <img src="./img/logov2.gif" />
-  </div>
-  <div class="container">
-    <div class="overlay" id="overlay">
-      <div class="sign-in" id="sign-in">
-        <h1>Bem vindo!</h1>
-        <p>Para se conectar ao mundo de drinks, informe seus dados</p>
-        <button class="switch-button" id="slide-right-button">Login</button>
-      </div>
-      <div class="sign-up" id="sign-up">
-        <h1>Olá!</h1>
-        <p>Informe seus dados para iniciar sua jornada!</p>
-        <button class="switch-button" id="slide-left-button">Cadastro</button>
-      </div>
+  <body>
+    <div class="containerTop">
+      <img src="./img/logov2.gif" />
     </div>
-    <div class="form">
-      <div class="sign-in" id="sign-in-info">
-        <h1>LOGIN</h1>
-        <div id="sign-in-form">
-          <input id="email" type="email" placeholder="Email" />
-          <input id="senha" type="password" placeholder="Password" />
-          <button class="control-button in" onclick="login()">Entrar</button>
+    <div class="container">
+      <div class="overlay" id="overlay">
+        <div class="sign-in" id="sign-in">
+          <h1>Bem vindo!</h1>
+          <p>Para se conectar ao mundo de drinks, informe seus dados</p>
+          <button class="switch-button" id="slide-right-button">Login</button>
+        </div>
+        <div class="sign-up" id="sign-up">
+          <h1>Olá!</h1>
+          <p>Informe seus dados para iniciar sua jornada!</p>
+          <button class="switch-button" id="slide-left-button">Cadastro</button>
         </div>
       </div>
-      <div class="sign-up" id="sign-up-info">
-        <h1>CRIE SUA CONTA</h1>
-        <form id="sign-up-form">
-          <input type="text" placeholder="Nome" id="nomeInp" required />
-          <input type="email" placeholder="Email" id="emailInp" required />
-          <input type="password" placeholder="Senha" id="senhaInp" required /><br />
-          <input type="checkbox" id="maiorIdade" required /><label class="labelCheckbox">Declaro que sou maior de 18
-            anos.</label>
-          <button class="control-button up" onclick="usersLocalStorage()">Cadastar</button>
-        </form>
+      <div class="form">
+        <div class="sign-in" id="sign-in-info">
+          <h1>LOGIN</h1>
+          <div id="sign-in-form">
+            <input id="email" type="email" placeholder="Email" />
+            <input id="senha" type="password" placeholder="Password" />
+            <button class="control-button in" onclick="login()">Entrar</button>
+          </div>
+        </div>
+        <div class="sign-up" id="sign-up-info">
+          <h1>CRIE SUA CONTA</h1>
+          <form id="sign-up-form">
+            <input type="text" placeholder="Nome" id="nomeInp" required />
+            <input type="email" placeholder="Email" id="emailInp" required />
+            <input
+              type="password"
+              placeholder="Senha"
+              id="senhaInp"
+              required
+            /><br />
+            <input type="checkbox" id="maiorIdade" required /><label
+              class="labelCheckbox"
+              >Declaro que sou maior de 18 anos.</label
+            >
+            <button
+              id="button-cadastro"
+              class="control-button up"
+              onclick="usersLocalStorage()"
+            >
+              Cadastar
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="./JS/landing2.js"></script>
-</body>
-
+    <script src="./JS/landing2.js"></script>
+  </body>
 </html>

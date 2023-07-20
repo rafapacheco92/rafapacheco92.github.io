@@ -1,12 +1,5 @@
 @import url(./global.css);
 
-
-.main {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 40px;
-}
-
 /* CONTEUDO */
 
 .containerAlt {
@@ -25,15 +18,15 @@
   align-content: center;
   justify-items: center;
   border: 3px solid transparent;
-  border-image: linear-gradient(to bottom, #DDA0DD, var(--roxoEscuro));
+  border-image: linear-gradient(to bottom, #dda0dd, var(--roxoEscuro));
   border-image-slice: 1;
   border-radius: 6px;
+  max-width: 1060px;
 }
 
 .conteudoBar h1 {
   font-size: 3rem;
 }
-
 
 .containerAlt p {
   margin-bottom: 2rem;
@@ -63,7 +56,7 @@
 
 .checkbox-wrapper-2 .ckbox::before {
   bottom: -6px;
-  content: "";
+  content: '';
   left: -6px;
   position: absolute;
   right: -6px;
@@ -78,7 +71,7 @@
 .checkbox-wrapper-2 .ckbox::after {
   background-color: #fff;
   border-radius: 50%;
-  content: "";
+  content: '';
   height: 14px;
   left: 3px;
   position: absolute;
@@ -86,7 +79,7 @@
   width: 14px;
 }
 
-.checkbox-wrapper-2 input[type=checkbox] {
+.checkbox-wrapper-2 input[type='checkbox'] {
   cursor: default;
 }
 
@@ -124,14 +117,14 @@
   border: 1px solid #4800bc;
   border-radius: 4px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   direction: ltr;
   display: block;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 17px;
   font-weight: 400;
-  letter-spacing: -.022em;
+  letter-spacing: -0.022em;
   line-height: 1.47059;
   min-width: 30px;
   overflow: visible;
@@ -145,7 +138,7 @@
 
 .button-15:disabled {
   cursor: default;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .button-15:hover {
@@ -171,18 +164,16 @@
 
 .cardReceita {
   border-bottom: 3px solid transparent;
-  border-image: linear-gradient(to left, #DDA0DD, var(--roxoEscuro));
+  border-image: linear-gradient(to left, #dda0dd, var(--roxoEscuro));
   border-image-slice: 1;
   border-radius: 30px;
-  -webkit-mask:
-  linear-gradient(#fff 0 0) padding-box, 
-  linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   display: grid;
   justify-items: center;
 }
 
 .cardTexto {
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
 .fotoBar {

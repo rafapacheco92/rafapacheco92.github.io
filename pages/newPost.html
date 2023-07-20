@@ -1,223 +1,247 @@
 <!DOCTYPE html>
 
 <html>
-<html lang="pt-BR">
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <title>LiquID - Amigos de alguns drinks</title>
+      <link rel="stylesheet" href="../CSS/stylePost.css" />
+      <meta name="description" content="liquID" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="../img/png/favicon.ico" type="image/svg+xml" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+        rel="stylesheet"
+      />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>LiquID - Amigos de alguns drinks</title>
-  <link rel="stylesheet" href="../CSS/stylePost.css" />
-  <meta name="description" content="liquID" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../img/png/favicon.ico" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-</head>
+    <body>
+      <header>
+        <div class="header">
+          <div class="divLogo">
+            <a class="aLogo" href="./perfil.html"
+              ><img
+                class="logo"
+                src="../img/png/roxo_claro_transparente - Copia.png"
+                alt="Logo"
+            /></a>
+          </div>
+          <nav class="navPrimaria" aria-label="primária">
+            <ul class="headerMenu">
+              <li class="headerBotao">
+                <a class="conexoes botaoConexoes"
+                  ><img src="../img/png/menuIcons/friends.png" />
+                  <p>Conexões</p>
+                </a>
+              </li>
+              <li class="headerBotao">
+                <a class="receitas" href="../pages/receitas.html"
+                  ><img src="../img/png/menuIcons/recipes.png" />
+                  <p>Receitas</p>
+                </a>
+              </li>
+              <li class="headerBotao">
+                <a class="bar" href="../pages/meuBar.html"
+                  ><img src="../img/png/menuIcons/barR.png" />
+                  <p>Meu Bar</p>
+                </a>
+              </li>
+              <li class="headerBotao">
+                <a class="add" href="../pages/newPost.html"
+                  ><img src="../img/png/menuIcons/add.png" />
+                  <p>Publicar</p>
+                </a>
+              </li>
+              <li class="headerBotao headerBotaoExit">
+                <a class="add" href="../index.html"
+                  ><img class="exit" src="../img/png/menuIcons/exit.png" />
+                  <p></p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-<body>
-  <header>
-    <div class="header">
-      <div class="divLogo">
-        <a class="aLogo" href="./perfil.html"><img class="logo" src="../img/png/roxo_claro_transparente - Copia.png"
-            alt="Logo" /></a>
-      </div>
-      <nav class="navPrimaria" aria-label="primária">
-        <ul class="headerMenu">
-          <li class="headerBotao">
-            <a class="conexoes botaoConexoes"><img src="../img/png/menuIcons/friends.png" />
-              <p>Conexões</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="receitas" href="../pages/receitas.html"><img src="../img/png/menuIcons/recipes.png" />
-              <p>Receitas</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="bar" href="../pages/meuBar.html"><img src="../img/png/menuIcons/barR.png" />
-              <p>Meu Bar</p>
-            </a>
-          </li>
-          <li class="headerBotao">
-            <a class="add" href="../pages/newPost.html"><img src="../img/png/menuIcons/add.png" />
-              <p>Publicar</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <dialog class="conexoesPop">
-    <div class="conexoesConteudo">
-      <div class="topModal">
-        <div class="divH2">
-          <h2>Conexões</h2>
-        </div>
-        <div class="divBotaoX"><button>X</button></div>
-      </div>
-      <div class="bottomModal">
-        <div class="conexaoBorda">
-          <img src="../img/perfil/rodrigo.jfif" alt="" />
-          <p>Rodrigo Ramos</p>
-        </div>
-        <div class="conexaoBorda">
-          <img src="../img/perfil/perfilrafa.jpg" alt="" />
-          <p>Saulo</p>
-          <p></p>
-        </div>
-
-        <div class="conexao">
-          <img src="../img/perfil/rodrigo.jfif" alt="" />
-          <p>Yaovi</p>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <dialog class="notPop">
-    <div class="notConteudo">
-      <div class="topModal">
-        <div class="divH2">
-          <h2>Notificações</h2>
-        </div>
-        <div class="divBotaoX"><button>X</button></div>
-      </div>
-      <div class="bottomModal">
-        <div class="notBorda" id="divNotificacao00">
-          <button class="btNotficiation" onclick="Apaga(0)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Saulo adicionou uma nova receita!</p>
-          <p></p>
-        </div>
-
-        <div class="notBorda" id="divNotificacao01">
-          <button class="btNotficiation" onclick="Apaga(1)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Rodrigo adicionou uma nova receita!</p>
-          <p></p>
-        </div>
-
-        <div class="notBorda" id="divNotificacao02">
-          <button class="btNotficiation" onclick="Apaga(2)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Yaovi adicionou uma nova receita!</p>
-          <p></p>
-        </div>
-
-        <div class="notBorda" id="divNotificacao03">
-          <button class="btNotficiation" onclick="Apaga(3)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
-        </div>
-        <div class="notBorda" id="divNotificacao04">
-          <button class="btNotficiation" onclick="Apaga(4)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Saulo aceitou sua solicitação de conexão.</p>
-          <p></p>
-        </div>
-
-        <div class="not notBorda" id="divNotificacao05">
-          <button class="btNotficiation" onclick="Apaga(5)">
-            <img class="check" src="../img/perfil/check-circle-svgrepo-com.svg" />
-          </button>
-          <p>Yaovi aceitou sua solicitação de conexão.</p>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <main class="main" id="mainId">
-    <nav aria-label="secundária" class="aside asidePerfil">
-      <a href="../pages/perfil.html">
-        <img src="../img/perfil/perfilrafa.jpg" alt="fotoPerfil" class="ftperfil" />
-      </a>
-      <div>
-        <h2>Rafael Pacheco</h2>
-        <p>
-          Me chamo Rafael, sou de Floripa, e me divirto fazendo uns drinks.
-        </p>
-      </div>
-      <ul>
-        <a href="./index.html">
-          <li>
-            <img src="../img/png/menuIcons/menuLateral/home.svg" /> Home
-          </li>
-        </a>
-        <a class="botaoNot">
-          <li>
-            <img src="../img/png/menuIcons/menuLateral/notifications.svg" />
-            Notificações
-          </li>
-        </a>
-        <a href="./news.html">
-          <li>
-            <img src="../img/png/menuIcons/menuLateral/explore.svg" />
-            Explorar
-          </li>
-        </a>
-      </ul>
-    </nav>
-    <section>
-      <article class="meuPost" aria-labelledby="label-introducao">
-        <div class="conteudoPost">
-          <h1>NOVA PUBLICAÇÃO</h1>
-
-          <div class="containerAlt" id="containerA">
-            <div>
-              <label for="nomeDrink">TITULO DRINK:</label>
-              <input type="text" name="nomeDrink" id="nomeDrink" />
+      <dialog class="conexoesPop">
+        <div class="conexoesConteudo">
+          <div class="topModal">
+            <div class="divH2">
+              <h2>Conexões</h2>
+            </div>
+            <div class="divBotaoX"><button>X</button></div>
+          </div>
+          <div class="bottomModal">
+            <div class="conexaoBorda">
+              <img src="../img/perfil/rodrigo.jfif" alt="" />
+              <p>Rodrigo Ramos</p>
+            </div>
+            <div class="conexaoBorda">
+              <img src="../img/perfil/perfilrafa.jpg" alt="" />
+              <p>Saulo</p>
+              <p></p>
             </div>
 
-            <div id="origem" class="ingredienteDiv">
-              <div>
-                <label for="ingrediente">INGREDIENTE: </label>
-                <input type="text" class="ingredienteInput" id="ingredientesInput"/>
-              </div>
+            <div class="conexao">
+              <img src="../img/perfil/rodrigo.jfif" alt="" />
+              <p>Yaovi</p>
             </div>
-            <div id="newInputDiv"></div>
-            <div class="botoes">
-              <button class="button-add" onclick="newIngrediente()">
-                NOVO INGREDIENTE
-              </button>
-            </div>
-            <h2>DESCRIÇÃO</h2>
-            <textarea id="textoDrink" class="textoDrink" name="receitaTexto" rows="10" cols="50"></textarea>
-            <h2>RECEITA</h2>
-            <textarea id="receitaTexto" class="receitaTexto" name="receitaTexto" rows="10" cols="50"></textarea>
-
-            <label for="foto" id="labelFoto" class="button-15">ESCOLHER FOTO</label>
-            <input type="file" name="foto" id="foto" class="foto" />
-
-            <a href="./perfil.html" onclick="event.preventDefault();"><button class="button-15" role="button"
-                onclick="addIngredientes()">
-                PUBLICAR
-              </button>
-            </a>
           </div>
         </div>
-      </article>
-    </section>
-  </main>
+      </dialog>
 
-  <footer class="rodape">
-    <p>
-      Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
-      historia e honramos todo suor gasto para extrair somente o melhor de
-      cada ingrediente. Liquid, sejam bem vindos.
-    </p>
-  </footer>
+      <dialog class="notPop">
+        <div class="notConteudo">
+          <div class="topModal">
+            <div class="divH2">
+              <h2>Notificações</h2>
+            </div>
+            <div class="divBotaoX"><button>X</button></div>
+          </div>
+          <div class="bottomModal">
+            <div class="notBorda" id="divNotificacao00">
+              <button class="btNotficiation" onclick="Apaga(0)">
+                <img
+                  class="check"
+                  src="../img/perfil/check-circle-svgrepo-com.svg"
+                />
+              </button>
+              <p>Saulo adicionou uma nova receita!</p>
+              <p></p>
+            </div>
 
-  <script src="../JS/editor.js"></script>
-  <script src="../JS/postPerfilDialog.js"></script>
-</body>
+            <div class="notBorda" id="divNotificacao01">
+              <button class="btNotficiation" onclick="Apaga(1)">
+                <img
+                  class="check"
+                  src="../img/perfil/check-circle-svgrepo-com.svg"
+                />
+              </button>
+              <p>Rodrigo adicionou uma nova receita!</p>
+              <p></p>
+            </div>
 
-</html>
+            <div class="notBorda" id="divNotificacao02">
+              <button class="btNotficiation" onclick="Apaga(2)">
+                <img
+                  class="check"
+                  src="../img/perfil/check-circle-svgrepo-com.svg"
+                />
+              </button>
+              <p>Yaovi adicionou uma nova receita!</p>
+              <p></p>
+            </div>
 
+            <div class="notBorda" id="divNotificacao03">
+              <button class="btNotficiation" onclick="Apaga(3)">
+                <img
+                  class="check"
+                  src="../img/perfil/check-circle-svgrepo-com.svg"
+                />
+              </button>
+              <p>Rodrigo Ramos aceitou sua solicitação de conexão.</p>
+            </div>
+            <div class="notBorda" id="divNotificacao04">
+              <button class="btNotficiation" onclick="Apaga(4)">
+                <img
+                  class="check"
+                  src="../img/perfil/check-circle-svgrepo-com.svg"
+                />
+              </button>
+              <p>Saulo aceitou sua solicitação de conexão.</p>
+              <p></p>
+            </div>
+
+            <div class="not notBorda" id="divNotificacao05">
+              <button class="btNotficiation" onclick="Apaga(5)">
+                <img
+                  class="check"
+                  src="../img/perfil/check-circle-svgrepo-com.svg"
+                />
+              </button>
+              <p>Yaovi aceitou sua solicitação de conexão.</p>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <main class="main" id="mainId">
+        <section>
+          <article class="meuPost" aria-labelledby="label-introducao">
+            <div class="conteudoPost">
+              <h1>NOVA PUBLICAÇÃO</h1>
+
+              <div class="containerAlt" id="containerA">
+                <div>
+                  <label for="nomeDrink">TITULO DRINK:</label>
+                  <input type="text" name="nomeDrink" id="nomeDrink" />
+                </div>
+
+                <div id="origem" class="ingredienteDiv">
+                  <div>
+                    <label for="ingrediente">INGREDIENTE: </label>
+                    <input
+                      type="text"
+                      class="ingredienteInput"
+                      id="ingredientesInput"
+                    />
+                  </div>
+                </div>
+                <div id="newInputDiv"></div>
+                <div class="botoes">
+                  <button class="button-add" onclick="newIngrediente()">
+                    NOVO INGREDIENTE
+                  </button>
+                </div>
+                <h2>DESCRIÇÃO</h2>
+                <textarea
+                  id="textoDrink"
+                  class="textoDrink"
+                  name="receitaTexto"
+                  rows="10"
+                  cols="50"
+                ></textarea>
+                <h2>RECEITA</h2>
+                <textarea
+                  id="receitaTexto"
+                  class="receitaTexto"
+                  name="receitaTexto"
+                  rows="10"
+                  cols="50"
+                ></textarea>
+
+                <label for="foto" id="labelFoto" class="button-15"
+                  >ESCOLHER FOTO</label
+                >
+                <input type="file" name="foto" id="foto" class="foto" />
+
+                <a href="./perfil.html" onclick="event.preventDefault();"
+                  ><button
+                    class="button-15"
+                    role="button"
+                    onclick="addIngredientes()"
+                  >
+                    PUBLICAR
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="rodape">
+        <p>
+          Preferimos drinks sem canudinhos e mini guarda-chuvas, respeitamos a
+          historia e honramos todo suor gasto para extrair somente o melhor de
+          cada ingrediente. Liquid, sejam bem vindos.
+        </p>
+      </footer>
+
+      <script src="../JS/editor.js"></script>
+      <script src="../JS/postPerfilDialog.js"></script>
+    </body>
+  </html>
 </html>
