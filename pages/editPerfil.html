@@ -141,11 +141,13 @@
         <section id="editPerfilConteudo">
             <div class="divEditPerfil">
                 <h1>EDITAR PERFIL</h1>
-                <label for="name">Nome:</label><input type="text" id="nameEdit">
-                <label for="email">E-mail:</label><input type="email" id="emailEdit">
-                <label for="senha">Senha:</label><input type="password">
-                <button class="botao" onclick="alterarConta()">ALTERAR</button>
-                <button class="botao" onclick="deletarConta()">DELETAR CONTA</button>
+                <div><label for="name">Nome: </label><input type="text" id="nameEdit"></div>
+                <div><label for="email">E-mail: </label><input type="email" id="emailEdit" disabled></div>
+                <div><label for="senha">Senha: </label><input type="password" id="passEdit"></div>
+                <div class="bioUser"><label for="">Sobre:</label><textarea id="bioEdit" cols="21" rows="5"></textarea>
+                </div>
+                <button class="botao" onclick="editInfo()">ALTERAR</button>
+                <button class="botao" onclick="removeAcc()">APAGAR CONTA</button>
             </div>
         </section>
 
@@ -160,6 +162,7 @@
     </footer>
     <script src="../JS/postPerfil.js"></script>
     <script src="../JS/editor.js"></script>
+    <script src="../JS/editPerfil.js"></script>
 </body>
 
 </html>

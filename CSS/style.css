@@ -1,7 +1,3 @@
 @import url(./global.css);
 /* Pagina de perfil */
 @import url(./conteudoPerfil.css);
-/* Pagina de cadastro */
-@import url(./cadastro.css);
-/* Responsivo */
-@import url(./responsivoPerfil.css);

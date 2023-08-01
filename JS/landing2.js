@@ -1,3 +1,9 @@
+let asidesS = ['Me chamo Rafael, nascido e criado em Floripa, me diverto com os drinks', 'Da trilha ao balcão, uma vida movida pela aventura e pelos sabores únicos.', 'Sommelier de Cervejas, cervejeiro caseiro e aventureiro no mundo dos drinks.']
+
+let asidesSJ = JSON.stringify(asidesS)
+localStorage.setItem('usersAside', asidesSJ)
+
+
 function usersLocalStorage() {
   const user = {
     nome: document.getElementById('nomeInp').value.toUpperCase(),
@@ -41,11 +47,20 @@ function usersLocalStorage() {
 function login() {
   const email = document.getElementById('email').value.toLowerCase();
   const senha = document.getElementById('senha').value;
-
   const users = JSON.parse(localStorage.getItem('usersDb'));
+  let emailExiste = false;
   // Checa se a senha e o usuarios estao corretos
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].email === email) {
+      var emailCheck = users[i].email;
+      emailExiste = true;
+    }
+  }
+
   for (let i = 0; i < users.length; i++) {
     if (users[i].email === email && users[i].senha === senha) {
+      var senhaCheck = users[i].senha;
       alert('Login realizado com sucesso!');
       const nome = users[i].nome;
       const email = document.getElementById('email').value.toLowerCase();
@@ -62,10 +77,13 @@ function login() {
 
   if (senha == '' || email == '') {
     alert('Preencha os campos!');
-  } else if (!userLogado) {
-    alert('Email ou senha inválidos.');
+  }else if(emailCheck == email && senhaCheck != senha) { 
+    alert('Senha inválida.');
+  } else if (emailExiste == false){
+    alert('E-mail inválido.');
   }
 }
+
 
 // ======================== overlay
 

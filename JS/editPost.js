@@ -59,7 +59,6 @@ function publicEditedPost() {
 }
 
 function remove() {
-  console.log('Removing');
   let objPostEdit = JSON.parse(localStorage.getItem('postEdit'));
 
   let vetorPost = JSON.parse(localStorage.getItem('post'));

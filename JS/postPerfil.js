@@ -1,26 +1,40 @@
+let bancoDados = JSON.parse(localStorage.getItem('usersDb'))
+let asideLocalStorage = JSON.parse(localStorage.getItem('usersAside'))
+
+let asidesS = ['Me chamo Rafael, nascido e criado em Floripa, me diverto com os drinks', 'Da trilha ao balcão, uma vida movida pela aventura e pelos sabores únicos.', 'Sommelier de Cervejas, cervejeiro caseiro e aventureiro no mundo dos drinks.']
+
 let usersPadrao = [
   {
-    nome: 'Rafael Pacheco',
+    nome: bancoDados[0].nome,
     descricao:
-      'Me chamo Rafael, sou de Floripa, e me divirto fazendo uns drinks.',
+      asideLocalStorage[0],
     foto: '../img/perfil/perfilrafa.jpg',
     email: 'rafael@gmail.com',
   },
   {
-    nome: 'Rodrigo Ramos',
+    nome: bancoDados[1].nome,
     descricao:
-      'Da trilha ao balcão, uma vida movida pela aventura e pelos sabores únicos.',
+      asideLocalStorage[1],
     foto: '../img/perfil/rodrigo.jfif',
     email: 'rodrigo@gmail.com',
   },
   {
-    nome: 'Saulo Tavares',
+    nome: bancoDados[2].nome,
     descricao:
-      'Sommelier de Cervejas. Cervejeiro caseiro e aventureiro no mundo dos drinks.',
+      asideLocalStorage[2],
     foto: '../img/perfil/fotoPerfilSaulo.jpg',
     email: 'saulo@gmail.com',
   },
 ];
+
+asideLocal()
+
+function asideLocal(){
+
+  let asidesSJ = JSON.stringify(asidesS)
+localStorage.setItem('usersAside', asidesSJ)
+
+}
 
 let posts = [
   {
@@ -40,7 +54,7 @@ let posts = [
       'Aqui em casa a gente tem a tradição de celebramos tudo o que é ótimo sobre o exagero brasileiro em um único dia, geralmente assistindo um Masterchef. principalmente na final. A comida é boa. Este ano, decidi que precisávamos de um coquetel edição especial para acompanhar, apresentando o Superb!',
     receita:
       'Adicione todas as bebidas alcoólicas em seu copo de coquetel com gelo. Agite. Coloque um magnífico pedaço de gelo em seu copo. Despeje seu coquetel sobre ele. Decore com suas cerejas ao marasquino.',
-    autor: 'RAFAEL',
+    autor: bancoDados[0].nome,
   },
 
   {
@@ -57,7 +71,7 @@ let posts = [
       'Curiosidade sobre mim, eu amo chocolate. Eu adoro em todas as formas. Quando posso tê-lo em forma de coquetel, fico muito feliz. Há até um boato (ou lenda) de que toda vez que vou à Vegas (algo que tento fazer pelo menos uma vez por ano), gosto de começar todos os dias com um Chocolate Martini. E o que dizer do fim da noite? E quando é hora de  com algo da família do bourbon? Temos o Coquetel de Chocolate, Xarope de Ácer e amendoas para isso!',
     receita:
       'Faça seu bourbon infusionado com pecan. Adicione o bourbon, o xarope, o crème de cacao amargo e os bitters em um shaker com gelo. Agite. Despeje o conteúdo do shaker em um  old fashioned com um grande pedaço de gelo. Decore com uma fatia de pecan. Despeje uma parte da stout suavemente por cima.',
-    autor: 'RODRIGO',
+    autor: bancoDados[1].nome,
   },
 
   {
@@ -76,7 +90,7 @@ let posts = [
       'Uma antiga amiga minha, me disse que ela e um amigo tinham uma banda e que eles eram bons, eu sabia que eles seriam bons. Essa foi minha introdução ao Lucid Fly e (tambores) eles finalmente estão lançando seu primeiro álbum de estúdio! Doug pediu se poderíamos criar um coquetel para o álbum deles, e quem sou eu para dizer não? Apresentando o coquetel Lucid Fly!',
     receita:
       'Coloque todos os ingredientes no copo Old Fashioned. Adicione cubos de gelo e mexa bem. Decore com rodelas de laranja e sirva.',
-    autor: 'SAULO',
+    autor: bancoDados[2].nome,
   },
 
   {
@@ -98,7 +112,7 @@ let posts = [
       'Dia dos Namorados, ah, que época mágica do ano. Tudo é cor-de-rosa, fofo e cheio de sentimentos melosos e "bleh". Claro, vou comemorar, mas é mais um momento para ficar em casa. Não precisa sair, fazer um grande alarde ou mostrar pra todo mundo.',
     receita:
       'Coloque todas as bebidas alcoólicas e o suco de limão em uma coqueteleira. Adicione gelo. Agite. Despeje e coe em seu copo. Adicione uma etapa de coagem para evitar pedaços de gelo. A menos que você prefira, nesse caso, não coe. Decore com um morango. Agora, fique amargo. Ou seja feliz. De qualquer maneira, é um coquetel excelente.',
-    autor: 'RAFAEL',
+    autor: bancoDados[0].nome,
   },
 
   {
@@ -115,7 +129,7 @@ let posts = [
       'Se você não conhece horchata, é um elixir mágico de sabor - pense nela como um pudim de arroz, mas em forma de bebida e mais leve. É refrescante. Sabendo disso, era apenas  questão de tempo para eu enfrentar essa bebida mais incrível em forma de álcool, vamos começar com o Horchata!',
     receita:
       'Adicione todos os ingredientes em um shaker com gelo. Adivinha? Agite. Encha o copo com gelo. Coe sua horchata azedada no copo. Decore com um pouco de canela.',
-    autor: 'RODRIGO',
+    autor: bancoDados[1].nome,
   },
 
   {
@@ -130,7 +144,7 @@ let posts = [
       'Ah, St. Patrick day - sempre fui fã. Desde a comida até a música e a desculpa para usar verde, tudo é mágico. Caramba, isso foi antes mesmo de eu perceber que era um ótimo dia para tomar uma caneca (ou três) de cerveja. No entanto, às vezes você quer mais do que apenas uma caneca solitária, talvez até algo que não seja verde. Para esses momentos, aproveite um Black Velvet!',
     receita:
       'Abra sua cidra. Abra sua stout. Despeje uma parte da cidra em seu copo pilsner. Pegue uma colher e coloque-a logo acima da cidra. Despeje uma parte da stout suavemente por cima.',
-    autor: 'SAULO',
+    autor: bancoDados[2].nome,
   },
 ];
 
@@ -147,6 +161,7 @@ populaPostsLocalStorage();
 
 function populaAside() {
   let userLogged = JSON.parse(localStorage.getItem('userLogado'));
+  let asideContent = JSON.parse(localStorage.getItem('usersAside'))
   let nome;
   let texto;
   let foto;
@@ -185,9 +200,16 @@ function populaAside() {
   divTextos.appendChild(pAside);
 }
 
+function exit(){
+  userLogout = JSON.stringify(localStorage.getItem('userLogado'));
+  userLogout = ''
+  localStorage.setItem('userLogado', userLogout);
+  alert('Até breve!')
+  window.location.href = '../index.html';
+}
+
 function populaPostsLocalStorage() {
   vetorPosts = JSON.stringify(localStorage.getItem('post'));
-
   if (vetorPosts === 'null') {
     let firstPosts = JSON.stringify(posts);
     localStorage.setItem('post', firstPosts);
@@ -199,6 +221,7 @@ let newPosts = JSON.parse(localStorage.getItem('post'));
 criaPost(newPosts);
 
 function criaPost(newPosts) {
+
   for (i = 0; i < newPosts.length; i++) {
     let main = document.getElementById('mainId');
     let sectionPosts = document.getElementById('posts');

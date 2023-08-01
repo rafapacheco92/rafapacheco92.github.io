@@ -38,6 +38,7 @@ function addIngredientes() {
   for (i = 0; i < ingredientesDoInput.length; i++) {
     ingredientesPost.push(ingredientesDoInput[i].value);
   }
+  console.log(ingredientesPost)
   objPost.nome = tituloReceita;
   objPost.texto = textoDescricao;
   objPost.ingredientes = ingredientesPost;
@@ -45,7 +46,7 @@ function addIngredientes() {
   objPost.autor = autor.nome;
   switch (autor.nome) {
     case 'RAFAEL':
-      objPost.fotoAutor = '../img/perfil/rafael.jpg';
+      objPost.fotoAutor = '../img/perfil/perfilrafa.jpg';
       break;
     case 'SAULO':
       objPost.fotoAutor = '../img/perfil/fotoPerfilSaulo.jpg';
@@ -63,14 +64,15 @@ function addIngredientes() {
   nomeFoto = nomeFoto.toString().replaceAll(',', '');
   console.log(nomeFoto, 'nomeFoto');
   objPost.foto = `../img/posts/${nomeFoto}`;
+  console.log(objPost.foto);
 
   let vetorPost = JSON.parse(localStorage.getItem('post'));
-
+  console.log(vetorPost)
   vetorPost.unshift(objPost);
-
-  let postTeste = JSON.stringify(vetorPost);
-
-  localStorage.setItem('post', postTeste);
+  console.log(vetorPost)
+  let postTotal = JSON.stringify(vetorPost);
+  console.log(postTotal)
+  localStorage.setItem('post', postTotal);
 
   window.location.href = './perfil.html';
 }
